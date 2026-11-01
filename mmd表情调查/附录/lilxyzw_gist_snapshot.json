@@ -1,0 +1,96 @@
+{
+  "url": "https://api.github.com/gists/80608d9b16bf3458c61dec6b090805c5",
+  "forks_url": "https://api.github.com/gists/80608d9b16bf3458c61dec6b090805c5/forks",
+  "commits_url": "https://api.github.com/gists/80608d9b16bf3458c61dec6b090805c5/commits",
+  "id": "80608d9b16bf3458c61dec6b090805c5",
+  "node_id": "G_kwDOBHChkdoAIDgwNjA4ZDliMTZiZjM0NThjNjFkZWM2YjA5MDgwNWM1",
+  "git_pull_url": "https://gist.github.com/80608d9b16bf3458c61dec6b090805c5.git",
+  "git_push_url": "https://gist.github.com/80608d9b16bf3458c61dec6b090805c5.git",
+  "html_url": "https://gist.github.com/lilxyzw/80608d9b16bf3458c61dec6b090805c5",
+  "files": {
+    "mmd_morph_names.txt": {
+      "filename": "mmd_morph_names.txt",
+      "type": "text/plain",
+      "language": "Text",
+      "raw_url": "https://gist.githubusercontent.com/lilxyzw/80608d9b16bf3458c61dec6b090805c5/raw/28d4a4607f059fafaaf14480e938cbc6dbf4b6bb/mmd_morph_names.txt",
+      "size": 339,
+      "truncated": false,
+      "content": "まばたき\n笑い\nウィンク\nウィンク２\nウィンク右\nｳｨﾝｸ２右\nはぅ\nなごみ\nびっくり\nじと目\n瞳小\nｷﾘｯ\n恐ろしい子！\nしいたけ\nあ\nい\nう\nえ\nお\nん\n▲\n∧\nワ\nω\nにやり\nにやり２\nにっこり\n口角上げ\n口角下げ\n口横広げ\n真面目\n困る\nにこり\n怒り\n下\n上\n照れ\n涙",
+      "encoding": "utf-8"
+    },
+    "mmd_morph_names_all.txt": {
+      "filename": "mmd_morph_names_all.txt",
+      "type": "text/plain",
+      "language": "Text",
+      "raw_url": "https://gist.githubusercontent.com/lilxyzw/80608d9b16bf3458c61dec6b090805c5/raw/820c8d3b502822f91e9635e71fe201c0a3598cdf/mmd_morph_names_all.txt",
+      "size": 5398,
+      "truncated": false,
+      "content": "あ: 90.89027 %\nまばたき: 87.57764 %\nお: 87.57764 %\nい: 86.74948 %\nう: 81.15942 %\n笑い: 68.73706 %\n困る: 49.06832 %\nえ: 46.37681 %\n下: 40.37267 %\n怒り: 28.36439 %\nウィンク: 27.12215 %\n上: 25.67288 %\n真面目: 23.18841 %\nにやり: 22.77433 %\n瞳小: 19.87578 %\nにこり: 17.59834 %\nはぅ: 17.18427 %\nウィンク右: 11.80124 %\nじと目: 10.35197 %\nびっくり: 9.937888 %\nなごみ: 7.660456 %\nワ: 7.453416 %\nにっこり: 4.968944 %\nん: 4.761905 %\n照れ: 4.347826 %\n∧: 3.933748 %\nω: 3.519669 %\n口角上げ: 3.312629 %\nウィンク２: 2.898551 %\nウィンク2: 2.691511 %\nｷﾘｯ: 2.484472 %\n▲: 2.484472 %\nｳｨﾝｸ２右: 2.277433 %\nつまさき右: 2.070393 %\n涙: 2.070393 %\n口角下げ: 1.863354 %\n口横広げ: 1.863354 %\nにやり２: 1.863354 %\n笑: 1.863354 %\nにやり2: 1.863354 %\nぽけー: 1.656315 %\n驚き: 1.656315 %\n見開き: 1.656315 %\nつまさき左: 1.656315 %\n恐ろしい子！: 1.449275 %\nむ: 1.449275 %\nしいたけ: 1.449275 %\n口わらい: 1.242236 %\n△: 1.242236 %\nまば左: 1.242236 %\n喜ぶ: 1.242236 %\n右ウィンク: 1.242236 %\nｺｯﾁﾐﾝﾅ: 1.035197 %\n困り: 1.035197 %\n口わらい2: 1.035197 %\nああ: 1.035197 %\n叫び: 1.035197 %\n上右: 1.035197 %\nまば右: 1.035197 %\nつま先左: 1.035197 %\nつま先右: 1.035197 %\n口下: 0.8281574 %\nウィンク左: 0.8281574 %\n平行: 0.8281574 %\nにこ: 0.8281574 %\nあ２: 0.8281574 %\n－－: 0.8281574 %\nまばたき２: 0.8281574 %\n前: 0.621118 %\nライン短: 0.621118 %\nほ: 0.621118 %\n一文字: 0.621118 %\nあーれー: 0.621118 %\nにたり: 0.621118 %\nいい: 0.621118 %\n悲しい: 0.621118 %\nうう: 0.621118 %\nむっ: 0.621118 %\nあしへこ: 0.621118 %\n八: 0.621118 %\nがーん: 0.621118 %\nΛ: 0.621118 %\nハート: 0.621118 %\nウィンク右２: 0.621118 %\n泣き: 0.621118 %\n上左: 0.621118 %\n泣き眉: 0.621118 %\nわー: 0.621118 %\nへ: 0.621118 %\nえー: 0.621118 %\n縮小: 0.4140787 %\nはぁと: 0.4140787 %\n怒り右: 0.4140787 %\nどんより: 0.4140787 %\n口すぼみ: 0.4140787 %\n頬染め: 0.4140787 %\nおお: 0.4140787 %\n困り右: 0.4140787 %\n犬歯: 0.4140787 %\n赤み: 0.4140787 %\nウルウル目: 0.4140787 %\n怒り左: 0.4140787 %\nおー: 0.4140787 %\nジト目: 0.4140787 %\nニッ: 0.4140787 %\n半開き: 0.4140787 %\n下瞼上げ: 0.4140787 %\n３: 0.4140787 %\n星目: 0.4140787 %\n□: 0.4140787 %\n左眉上: 0.4140787 %\n◇◇: 0.4140787 %\n○○: 0.4140787 %\n見開く: 0.4140787 %\n真っ直ぐ: 0.4140787 %\n頬染２: 0.4140787 %\n絶望: 0.4140787 %\nband1: 0.2070393 %\n拡大: 0.2070393 %\n??: 0.2070393 %\n: 0.2070393 %\n?: 0.2070393 %\n白目: 0.2070393 %\n∧２: 0.2070393 %\nくっ: 0.2070393 %\nにっ: 0.2070393 %\n口幅開き: 0.2070393 %\n白目黒: 0.2070393 %\n瞳赤: 0.2070393 %\n青ざめ: 0.2070393 %\n赤面: 0.2070393 %\n汗3: 0.2070393 %\nハイライト大: 0.2070393 %\n下瞼↑: 0.2070393 %\n睨: 0.2070393 %\n目尻下: 0.2070393 %\n上瞼↓: 0.2070393 %\nあああ: 0.2070393 %\nいいい: 0.2070393 %\nにこり右: 0.2070393 %\nコッチミンナ: 0.2070393 %\n困り左: 0.2070393 %\n赤み2: 0.2070393 %\nグル目: 0.2070393 %\n左ほほ: 0.2070393 %\n右ほほ: 0.2070393 %\nゴーグル: 0.2070393 %\n無表情: 0.2070393 %\nウルウル: 0.2070393 %\n口下げ: 0.2070393 %\n涙消し: 0.2070393 %\n赤らめ: 0.2070393 %\nアゴ下げ: 0.2070393 %\n垂れ目: 0.2070393 %\nぴえん: 0.2070393 %\nおちょぼ口: 0.2070393 %\nすぼめ: 0.2070393 %\n歯なし: 0.2070393 %\nウィンク1: 0.2070393 %\n照れ2: 0.2070393 %\nシリアス: 0.2070393 %\nにや: 0.2070393 %\nに～: 0.2070393 %\nぎり: 0.2070393 %\n舌細: 0.2070393 %\n下L: 0.2070393 %\n下R: 0.2070393 %\nにこ右: 0.2070393 %\n頬膨らみ: 0.2070393 %\nｳｨﾝｸ右２: 0.2070393 %\nにこ左: 0.2070393 %\n顔線: 0.2070393 %\nニカッ: 0.2070393 %\nいー: 0.2070393 %\nД: 0.2070393 %\nω口: 0.2070393 %\n瞳大: 0.2070393 %\n縞パン: 0.2070393 %\nハァ？: 0.2070393 %\n目２: 0.2070393 %\n暗目: 0.2070393 %\nはちゅ目: 0.2070393 %\nlook down: 0.2070393 %\nlook right: 0.2070393 %\nlook left: 0.2070393 %\nwing: 0.2070393 %\n格子開: 0.2070393 %\n右眉上: 0.2070393 %\nわーい: 0.2070393 %\nsword: 0.2070393 %\nぺろっ: 0.2070393 %\nニヤリ: 0.2070393 %\nニヤリ左: 0.2070393 %\n歯隠し: 0.2070393 %\nデフォルト口: 0.2070393 %\n歯off: 0.2070393 %\n悲し目: 0.2070393 %\n嬉し目: 0.2070393 %\nあ３: 0.2070393 %\n_笑い２: 0.2070393 %\n怒る: 0.2070393 %\n下2: 0.2070393 %\nｼｬｷｰﾝ: 0.2070393 %\nかなり下: 0.2070393 %\n困る左だけ: 0.2070393 %\n怒り左だけ: 0.2070393 %\nむす: 0.2070393 %\nあ2: 0.2070393 %\nい2: 0.2070393 %\nお2: 0.2070393 %\n△１: 0.2070393 %\nんー: 0.2070393 %\n＝＝: 0.2070393 %\nふむふむ: 0.2070393 %\nほっ: 0.2070393 %\n□（大）: 0.2070393 %\nほほ上: 0.2070393 %\n閉じる: 0.2070393 %\nニコ: 0.2070393 %\nワ大: 0.2070393 %\n変形: 0.2070393 %\nウィンク右2: 0.2070393 %\n大口: 0.2070393 %\nなぬ！: 0.2070393 %\nｷﾞｭｯ: 0.2070393 %\n猫耳: 0.2070393 %\n笑い目: 0.2070393 %\nカメラ目線: 0.2070393 %\nωあ: 0.2070393 %\nωお: 0.2070393 %\nにこっ: 0.2070393 %\nにやり右: 0.2070393 %\nにやり左: 0.2070393 %\nほっぺ斜: 0.2070393 %\n一: 0.2070393 %\n（*?Д｀）: 0.2070393 %\n怒り眉: 0.2070393 %\n困惑: 0.2070393 %\n照れる: 0.2070393 %\n激怒: 0.2070393 %\nいーっ: 0.2070393 %\nじと目2: 0.2070393 %\n困る２: 0.2070393 %\nドヤァ: 0.2070393 %\nウインク２R: 0.2070393 %",
+      "encoding": "utf-8"
+    }
+  },
+  "public": true,
+  "created_at": "2023-05-13T11:36:40Z",
+  "updated_at": "2026-08-24T09:47:16Z",
+  "description": "mmd_morph_names_all.txtは手持ちモーション483個からモーフ使用率を計算したものです。キーフレーム数が2以下、または全てのキーフレームの値が0.01以下のものは扱われていないものとして除外しています。mmd_morph_names.txtは使用率の高いモーフから表記揺れをMMD付属モデルに合わせ、そこから更に厳選したものです。",
+  "comments": 0,
+  "user": null,
+  "comments_enabled": true,
+  "comments_url": "https://api.github.com/gists/80608d9b16bf3458c61dec6b090805c5/comments",
+  "owner": {
+    "login": "lilxyzw",
+    "id": 74490257,
+    "node_id": "MDQ6VXNlcjc0NDkwMjU3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/74490257?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lilxyzw",
+    "html_url": "https://github.com/lilxyzw",
+    "followers_url": "https://api.github.com/users/lilxyzw/followers",
+    "following_url": "https://api.github.com/users/lilxyzw/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lilxyzw/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lilxyzw/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lilxyzw/subscriptions",
+    "organizations_url": "https://api.github.com/users/lilxyzw/orgs",
+    "repos_url": "https://api.github.com/users/lilxyzw/repos",
+    "events_url": "https://api.github.com/users/lilxyzw/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lilxyzw/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "forks": [],
+  "history": [
+    {
+      "user": {
+        "login": "lilxyzw",
+        "id": 74490257,
+        "node_id": "MDQ6VXNlcjc0NDkwMjU3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/74490257?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lilxyzw",
+        "html_url": "https://github.com/lilxyzw",
+        "followers_url": "https://api.github.com/users/lilxyzw/followers",
+        "following_url": "https://api.github.com/users/lilxyzw/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lilxyzw/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lilxyzw/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lilxyzw/subscriptions",
+        "organizations_url": "https://api.github.com/users/lilxyzw/orgs",
+        "repos_url": "https://api.github.com/users/lilxyzw/repos",
+        "events_url": "https://api.github.com/users/lilxyzw/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lilxyzw/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "version": "9b3308bf4aa467c644d8554b50392f605735bcf4",
+      "committed_at": "2023-05-13T11:36:40Z",
+      "change_status": {
+        "total": 283,
+        "additions": 283,
+        "deletions": 0
+      },
+      "url": "https://api.github.com/gists/80608d9b16bf3458c61dec6b090805c5/9b3308bf4aa467c644d8554b50392f605735bcf4"
+    }
+  ],
+  "truncated": false
+}

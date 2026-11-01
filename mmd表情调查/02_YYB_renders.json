@@ -1,0 +1,557 @@
+{
+  "collection": "YYB式初音",
+  "armature": "YYB Hatsune Miku default 1.0ver_arm",
+  "mesh": "YYB Hatsune Miku default 1.0ver_mesh",
+  "head_bone": "頭",
+  "head_world": [
+    -3.8594006213088505e-08,
+    -0.021496973931789398,
+    1.3989486694335938
+  ],
+  "face_material": "face01",
+  "face_bounds": [
+    [
+      -0.05886085331439972,
+      -0.08670547604560852,
+      1.4325224161148071
+    ],
+    [
+      0.05886085331439972,
+      -0.07203201949596405,
+      1.4633058309555054
+    ]
+  ],
+  "camera_location": [
+    -9.383369103943551e-08,
+    -1.2793687582015991,
+    1.4479141235351562
+  ],
+  "camera_target": [
+    -3.8594006213088505e-08,
+    -0.07936874777078629,
+    1.4479141235351562
+  ],
+  "orthographic_scale": 0.2,
+  "folder": "02_YYB",
+  "source_shape_key_names": [
+    "Basis",
+    "mmd_sdef_c",
+    "mmd_sdef_r0",
+    "mmd_sdef_r1",
+    "真面目",
+    "困る",
+    "困る2",
+    "にこり",
+    "怒り",
+    "平行",
+    "上",
+    "左上",
+    "右上",
+    "下",
+    "左下",
+    "右下",
+    "眉頭",
+    "まばたき",
+    "笑い",
+    "ウィンク",
+    "ウィンク右",
+    "ウィンク２",
+    "ｳｨﾝｸ２右",
+    "笑い2",
+    "ｷﾘｯ",
+    "ｷﾘｯ２",
+    "なごみ",
+    "はぅ",
+    "びっくり",
+    "じと目",
+    "瞳小",
+    "たれ目",
+    "カメラ目",
+    "はちゅ目",
+    "はちゅ目２",
+    "笑い目",
+    "ん",
+    "∧",
+    "□",
+    "ω",
+    "ω□",
+    "にやり",
+    "ぺろっ",
+    "ぺろっ２",
+    "口角上げ",
+    "口角上げ　左",
+    "口角上げ　右",
+    "口角下げ",
+    "口角下げ　左",
+    "口角下げ　右",
+    "口横広げ",
+    "口横広げ　左",
+    "口横広げ　右",
+    "口横縮小",
+    "口横縮小　左",
+    "口横縮小　右",
+    "K",
+    "NS C",
+    "HL消",
+    "HLchange",
+    "Earphone switch A",
+    "Earphone switch B",
+    "xあ",
+    "xあ２",
+    "xあ３",
+    "xあ４",
+    "xい",
+    "xい２",
+    "xい３",
+    "xい４",
+    "xい５",
+    "xう",
+    "xえ",
+    "xお",
+    "sleeve change A",
+    "sleeve change B",
+    "glasses on"
+  ],
+  "expressions": [
+    {
+      "index": 1,
+      "name": "真面目",
+      "value": 1.0,
+      "path": "images/02_YYB/001_真面目.png"
+    },
+    {
+      "index": 2,
+      "name": "困る",
+      "value": 1.0,
+      "path": "images/02_YYB/002_困る.png"
+    },
+    {
+      "index": 3,
+      "name": "困る2",
+      "value": 1.0,
+      "path": "images/02_YYB/003_困る2.png"
+    },
+    {
+      "index": 4,
+      "name": "にこり",
+      "value": 1.0,
+      "path": "images/02_YYB/004_にこり.png"
+    },
+    {
+      "index": 5,
+      "name": "怒り",
+      "value": 1.0,
+      "path": "images/02_YYB/005_怒り.png"
+    },
+    {
+      "index": 6,
+      "name": "平行",
+      "value": 1.0,
+      "path": "images/02_YYB/006_平行.png"
+    },
+    {
+      "index": 7,
+      "name": "上",
+      "value": 1.0,
+      "path": "images/02_YYB/007_上.png"
+    },
+    {
+      "index": 8,
+      "name": "左上",
+      "value": 1.0,
+      "path": "images/02_YYB/008_左上.png"
+    },
+    {
+      "index": 9,
+      "name": "右上",
+      "value": 1.0,
+      "path": "images/02_YYB/009_右上.png"
+    },
+    {
+      "index": 10,
+      "name": "下",
+      "value": 1.0,
+      "path": "images/02_YYB/010_下.png"
+    },
+    {
+      "index": 11,
+      "name": "左下",
+      "value": 1.0,
+      "path": "images/02_YYB/011_左下.png"
+    },
+    {
+      "index": 12,
+      "name": "右下",
+      "value": 1.0,
+      "path": "images/02_YYB/012_右下.png"
+    },
+    {
+      "index": 13,
+      "name": "眉頭",
+      "value": 1.0,
+      "path": "images/02_YYB/013_眉頭.png"
+    },
+    {
+      "index": 14,
+      "name": "まばたき",
+      "value": 1.0,
+      "path": "images/02_YYB/014_まばたき.png"
+    },
+    {
+      "index": 15,
+      "name": "笑い",
+      "value": 1.0,
+      "path": "images/02_YYB/015_笑い.png"
+    },
+    {
+      "index": 16,
+      "name": "ウィンク",
+      "value": 1.0,
+      "path": "images/02_YYB/016_ウィンク.png"
+    },
+    {
+      "index": 17,
+      "name": "ウィンク右",
+      "value": 1.0,
+      "path": "images/02_YYB/017_ウィンク右.png"
+    },
+    {
+      "index": 18,
+      "name": "ウィンク２",
+      "value": 1.0,
+      "path": "images/02_YYB/018_ウィンク２.png"
+    },
+    {
+      "index": 19,
+      "name": "ｳｨﾝｸ２右",
+      "value": 1.0,
+      "path": "images/02_YYB/019_ｳｨﾝｸ２右.png"
+    },
+    {
+      "index": 20,
+      "name": "笑い2",
+      "value": 1.0,
+      "path": "images/02_YYB/020_笑い2.png"
+    },
+    {
+      "index": 21,
+      "name": "ｷﾘｯ",
+      "value": 1.0,
+      "path": "images/02_YYB/021_ｷﾘｯ.png"
+    },
+    {
+      "index": 22,
+      "name": "ｷﾘｯ２",
+      "value": 1.0,
+      "path": "images/02_YYB/022_ｷﾘｯ２.png"
+    },
+    {
+      "index": 23,
+      "name": "なごみ",
+      "value": 1.0,
+      "path": "images/02_YYB/023_なごみ.png"
+    },
+    {
+      "index": 24,
+      "name": "はぅ",
+      "value": 1.0,
+      "path": "images/02_YYB/024_はぅ.png"
+    },
+    {
+      "index": 25,
+      "name": "びっくり",
+      "value": 1.0,
+      "path": "images/02_YYB/025_びっくり.png"
+    },
+    {
+      "index": 26,
+      "name": "じと目",
+      "value": 1.0,
+      "path": "images/02_YYB/026_じと目.png"
+    },
+    {
+      "index": 27,
+      "name": "瞳小",
+      "value": 1.0,
+      "path": "images/02_YYB/027_瞳小.png"
+    },
+    {
+      "index": 28,
+      "name": "たれ目",
+      "value": 1.0,
+      "path": "images/02_YYB/028_たれ目.png"
+    },
+    {
+      "index": 29,
+      "name": "カメラ目",
+      "value": 1.0,
+      "path": "images/02_YYB/029_カメラ目.png"
+    },
+    {
+      "index": 30,
+      "name": "はちゅ目",
+      "value": 1.0,
+      "path": "images/02_YYB/030_はちゅ目.png"
+    },
+    {
+      "index": 31,
+      "name": "はちゅ目２",
+      "value": 1.0,
+      "path": "images/02_YYB/031_はちゅ目２.png"
+    },
+    {
+      "index": 32,
+      "name": "笑い目",
+      "value": 1.0,
+      "path": "images/02_YYB/032_笑い目.png"
+    },
+    {
+      "index": 33,
+      "name": "ん",
+      "value": 1.0,
+      "path": "images/02_YYB/033_ん.png"
+    },
+    {
+      "index": 34,
+      "name": "∧",
+      "value": 1.0,
+      "path": "images/02_YYB/034_∧.png"
+    },
+    {
+      "index": 35,
+      "name": "□",
+      "value": 1.0,
+      "path": "images/02_YYB/035_□.png"
+    },
+    {
+      "index": 36,
+      "name": "ω",
+      "value": 1.0,
+      "path": "images/02_YYB/036_ω.png"
+    },
+    {
+      "index": 37,
+      "name": "ω□",
+      "value": 1.0,
+      "path": "images/02_YYB/037_ω□.png"
+    },
+    {
+      "index": 38,
+      "name": "にやり",
+      "value": 1.0,
+      "path": "images/02_YYB/038_にやり.png"
+    },
+    {
+      "index": 39,
+      "name": "ぺろっ",
+      "value": 1.0,
+      "path": "images/02_YYB/039_ぺろっ.png"
+    },
+    {
+      "index": 40,
+      "name": "ぺろっ２",
+      "value": 1.0,
+      "path": "images/02_YYB/040_ぺろっ２.png"
+    },
+    {
+      "index": 41,
+      "name": "口角上げ",
+      "value": 1.0,
+      "path": "images/02_YYB/041_口角上げ.png"
+    },
+    {
+      "index": 42,
+      "name": "口角上げ　左",
+      "value": 1.0,
+      "path": "images/02_YYB/042_口角上げ　左.png"
+    },
+    {
+      "index": 43,
+      "name": "口角上げ　右",
+      "value": 1.0,
+      "path": "images/02_YYB/043_口角上げ　右.png"
+    },
+    {
+      "index": 44,
+      "name": "口角下げ",
+      "value": 1.0,
+      "path": "images/02_YYB/044_口角下げ.png"
+    },
+    {
+      "index": 45,
+      "name": "口角下げ　左",
+      "value": 1.0,
+      "path": "images/02_YYB/045_口角下げ　左.png"
+    },
+    {
+      "index": 46,
+      "name": "口角下げ　右",
+      "value": 1.0,
+      "path": "images/02_YYB/046_口角下げ　右.png"
+    },
+    {
+      "index": 47,
+      "name": "口横広げ",
+      "value": 1.0,
+      "path": "images/02_YYB/047_口横広げ.png"
+    },
+    {
+      "index": 48,
+      "name": "口横広げ　左",
+      "value": 1.0,
+      "path": "images/02_YYB/048_口横広げ　左.png"
+    },
+    {
+      "index": 49,
+      "name": "口横広げ　右",
+      "value": 1.0,
+      "path": "images/02_YYB/049_口横広げ　右.png"
+    },
+    {
+      "index": 50,
+      "name": "口横縮小",
+      "value": 1.0,
+      "path": "images/02_YYB/050_口横縮小.png"
+    },
+    {
+      "index": 51,
+      "name": "口横縮小　左",
+      "value": 1.0,
+      "path": "images/02_YYB/051_口横縮小　左.png"
+    },
+    {
+      "index": 52,
+      "name": "口横縮小　右",
+      "value": 1.0,
+      "path": "images/02_YYB/052_口横縮小　右.png"
+    },
+    {
+      "index": 53,
+      "name": "K",
+      "value": 1.0,
+      "path": "images/02_YYB/053_K.png"
+    },
+    {
+      "index": 54,
+      "name": "NS C",
+      "value": 1.0,
+      "path": "images/02_YYB/054_NS C.png"
+    },
+    {
+      "index": 55,
+      "name": "HL消",
+      "value": 1.0,
+      "path": "images/02_YYB/055_HL消.png"
+    },
+    {
+      "index": 56,
+      "name": "HLchange",
+      "value": 1.0,
+      "path": "images/02_YYB/056_HLchange.png"
+    },
+    {
+      "index": 57,
+      "name": "Earphone switch A",
+      "value": 1.0,
+      "path": "images/02_YYB/057_Earphone switch A.png"
+    },
+    {
+      "index": 58,
+      "name": "Earphone switch B",
+      "value": 1.0,
+      "path": "images/02_YYB/058_Earphone switch B.png"
+    },
+    {
+      "index": 59,
+      "name": "xあ",
+      "value": 1.0,
+      "path": "images/02_YYB/059_xあ.png"
+    },
+    {
+      "index": 60,
+      "name": "xあ２",
+      "value": 1.0,
+      "path": "images/02_YYB/060_xあ２.png"
+    },
+    {
+      "index": 61,
+      "name": "xあ３",
+      "value": 1.0,
+      "path": "images/02_YYB/061_xあ３.png"
+    },
+    {
+      "index": 62,
+      "name": "xあ４",
+      "value": 1.0,
+      "path": "images/02_YYB/062_xあ４.png"
+    },
+    {
+      "index": 63,
+      "name": "xい",
+      "value": 1.0,
+      "path": "images/02_YYB/063_xい.png"
+    },
+    {
+      "index": 64,
+      "name": "xい２",
+      "value": 1.0,
+      "path": "images/02_YYB/064_xい２.png"
+    },
+    {
+      "index": 65,
+      "name": "xい３",
+      "value": 1.0,
+      "path": "images/02_YYB/065_xい３.png"
+    },
+    {
+      "index": 66,
+      "name": "xい４",
+      "value": 1.0,
+      "path": "images/02_YYB/066_xい４.png"
+    },
+    {
+      "index": 67,
+      "name": "xい５",
+      "value": 1.0,
+      "path": "images/02_YYB/067_xい５.png"
+    },
+    {
+      "index": 68,
+      "name": "xう",
+      "value": 1.0,
+      "path": "images/02_YYB/068_xう.png"
+    },
+    {
+      "index": 69,
+      "name": "xえ",
+      "value": 1.0,
+      "path": "images/02_YYB/069_xえ.png"
+    },
+    {
+      "index": 70,
+      "name": "xお",
+      "value": 1.0,
+      "path": "images/02_YYB/070_xお.png"
+    },
+    {
+      "index": 71,
+      "name": "sleeve change A",
+      "value": 1.0,
+      "path": "images/02_YYB/071_sleeve change A.png"
+    },
+    {
+      "index": 72,
+      "name": "sleeve change B",
+      "value": 1.0,
+      "path": "images/02_YYB/072_sleeve change B.png"
+    },
+    {
+      "index": 73,
+      "name": "glasses on",
+      "value": 1.0,
+      "path": "images/02_YYB/073_glasses on.png"
+    }
+  ],
+  "neutral": "images/02_YYB/000_基准.png",
+  "seconds": 162.05
+}

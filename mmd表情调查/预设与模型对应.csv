@@ -1,0 +1,221 @@
+﻿preset_index,preset,region,model,match_type,actual_shape_key,image
+1,まばたき,EYE,Sour式初音,完全同名,まばたき,images/01_Sour/001_まばたき.png
+1,まばたき,EYE,YYB式初音,完全同名,まばたき,images/02_YYB/014_まばたき.png
+1,まばたき,EYE,Appearance Miku,完全同名,まばたき,images/03_Appearance/016_まばたき.png
+1,まばたき,EYE,TDA式初音,完全同名,まばたき,images/04_TDA/001_まばたき.png
+2,笑い,EYE,Sour式初音,完全同名,笑い,images/01_Sour/002_笑い.png
+2,笑い,EYE,YYB式初音,完全同名,笑い,images/02_YYB/015_笑い.png
+2,笑い,EYE,Appearance Miku,完全同名,笑い,images/03_Appearance/017_笑い.png
+2,笑い,EYE,TDA式初音,完全同名,笑い,images/04_TDA/002_笑い.png
+3,ウィンク,EYE,Sour式初音,完全同名,ウィンク,images/01_Sour/003_ウィンク.png
+3,ウィンク,EYE,YYB式初音,完全同名,ウィンク,images/02_YYB/016_ウィンク.png
+3,ウィンク,EYE,Appearance Miku,未找到,,
+3,ウィンク,EYE,TDA式初音,完全同名,ウィンク,images/04_TDA/003_ウィンク.png
+4,ウィンク右,EYE,Sour式初音,完全同名,ウィンク右,images/01_Sour/004_ウィンク右.png
+4,ウィンク右,EYE,YYB式初音,完全同名,ウィンク右,images/02_YYB/017_ウィンク右.png
+4,ウィンク右,EYE,Appearance Miku,未找到,,
+4,ウィンク右,EYE,TDA式初音,完全同名,ウィンク右,images/04_TDA/004_ウィンク右.png
+5,ウィンク２,EYE,Sour式初音,完全同名,ウィンク２,images/01_Sour/005_ウィンク２.png
+5,ウィンク２,EYE,YYB式初音,完全同名,ウィンク２,images/02_YYB/018_ウィンク２.png
+5,ウィンク２,EYE,Appearance Miku,未找到,,
+5,ウィンク２,EYE,TDA式初音,完全同名,ウィンク２,images/04_TDA/005_ウィンク２.png
+6,ｳｨﾝｸ２右,EYE,Sour式初音,完全同名,ｳｨﾝｸ２右,images/01_Sour/006_ｳｨﾝｸ２右.png
+6,ｳｨﾝｸ２右,EYE,YYB式初音,完全同名,ｳｨﾝｸ２右,images/02_YYB/019_ｳｨﾝｸ２右.png
+6,ｳｨﾝｸ２右,EYE,Appearance Miku,未找到,,
+6,ｳｨﾝｸ２右,EYE,TDA式初音,完全同名,ｳｨﾝｸ２右,images/04_TDA/006_ｳｨﾝｸ２右.png
+7,なごみ,EYE,Sour式初音,完全同名,なごみ,images/01_Sour/007_なごみ.png
+7,なごみ,EYE,YYB式初音,完全同名,なごみ,images/02_YYB/023_なごみ.png
+7,なごみ,EYE,Appearance Miku,完全同名,なごみ,images/03_Appearance/020_なごみ.png
+7,なごみ,EYE,TDA式初音,完全同名,なごみ,images/04_TDA/007_なごみ.png
+8,はぅ,EYE,Sour式初音,完全同名,はぅ,images/01_Sour/008_はぅ.png
+8,はぅ,EYE,YYB式初音,完全同名,はぅ,images/02_YYB/024_はぅ.png
+8,はぅ,EYE,Appearance Miku,完全同名,はぅ,images/03_Appearance/019_はぅ.png
+8,はぅ,EYE,TDA式初音,完全同名,はぅ,images/04_TDA/008_はぅ.png
+9,びっくり,EYE,Sour式初音,完全同名,びっくり,images/01_Sour/011_びっくり.png
+9,びっくり,EYE,YYB式初音,完全同名,びっくり,images/02_YYB/025_びっくり.png
+9,びっくり,EYE,Appearance Miku,完全同名,びっくり,images/03_Appearance/021_びっくり.png
+9,びっくり,EYE,TDA式初音,完全同名,びっくり,images/04_TDA/009_びっくり.png
+10,じと目,EYE,Sour式初音,完全同名,じと目,images/01_Sour/012_じと目.png
+10,じと目,EYE,YYB式初音,完全同名,じと目,images/02_YYB/026_じと目.png
+10,じと目,EYE,Appearance Miku,完全同名,じと目,images/03_Appearance/022_じと目.png
+10,じと目,EYE,TDA式初音,完全同名,じと目,images/04_TDA/010_じと目.png
+11,ｷﾘｯ,EYE,Sour式初音,完全同名,ｷﾘｯ,images/01_Sour/013_ｷﾘｯ.png
+11,ｷﾘｯ,EYE,YYB式初音,完全同名,ｷﾘｯ,images/02_YYB/021_ｷﾘｯ.png
+11,ｷﾘｯ,EYE,Appearance Miku,完全同名,ｷﾘｯ,images/03_Appearance/023_ｷﾘｯ.png
+11,ｷﾘｯ,EYE,TDA式初音,完全同名,ｷﾘｯ,images/04_TDA/011_ｷﾘｯ.png
+12,はちゅ目,EYE,Sour式初音,完全同名,はちゅ目,images/01_Sour/015_はちゅ目.png
+12,はちゅ目,EYE,YYB式初音,完全同名,はちゅ目,images/02_YYB/030_はちゅ目.png
+12,はちゅ目,EYE,Appearance Miku,未找到,,
+12,はちゅ目,EYE,TDA式初音,完全同名,はちゅ目,images/04_TDA/012_はちゅ目.png
+13,星目,OTHER,Sour式初音,完全同名,星目,images/01_Sour/021_星目.png
+13,星目,OTHER,YYB式初音,未找到,,
+13,星目,OTHER,Appearance Miku,未找到,,
+13,星目,OTHER,TDA式初音,完全同名,星目,images/04_TDA/041_星目.png
+14,はぁと,OTHER,Sour式初音,完全同名,はぁと,images/01_Sour/020_はぁと.png
+14,はぁと,OTHER,YYB式初音,未找到,,
+14,はぁと,OTHER,Appearance Miku,未找到,,
+14,はぁと,OTHER,TDA式初音,完全同名,はぁと,images/04_TDA/042_はぁと.png
+15,瞳小,OTHER,Sour式初音,完全同名,瞳小,images/01_Sour/026_瞳小.png
+15,瞳小,OTHER,YYB式初音,完全同名,瞳小,images/02_YYB/027_瞳小.png
+15,瞳小,OTHER,Appearance Miku,完全同名,瞳小,images/03_Appearance/042_瞳小.png
+15,瞳小,OTHER,TDA式初音,完全同名,瞳小,images/04_TDA/043_瞳小.png
+16,瞳縦潰れ,OTHER,Sour式初音,未找到,,
+16,瞳縦潰れ,OTHER,YYB式初音,未找到,,
+16,瞳縦潰れ,OTHER,Appearance Miku,未找到,,
+16,瞳縦潰れ,OTHER,TDA式初音,完全同名,瞳縦潰れ,images/04_TDA/044_瞳縦潰れ.png
+17,光下,OTHER,Sour式初音,未找到,,
+17,光下,OTHER,YYB式初音,未找到,,
+17,光下,OTHER,Appearance Miku,未找到,,
+17,光下,OTHER,TDA式初音,完全同名,光下,images/04_TDA/045_光下.png
+18,恐ろしい子！,EYE,Sour式初音,完全同名,恐ろしい子！,images/01_Sour/025_恐ろしい子！.png
+18,恐ろしい子！,EYE,YYB式初音,未找到,,
+18,恐ろしい子！,EYE,Appearance Miku,未找到,,
+18,恐ろしい子！,EYE,TDA式初音,完全同名,恐ろしい子！,images/04_TDA/046_恐ろしい子！.png
+19,ハイライト消,OTHER,Sour式初音,未找到,,
+19,ハイライト消,OTHER,YYB式初音,未找到,,
+19,ハイライト消,OTHER,Appearance Miku,未找到,,
+19,ハイライト消,OTHER,TDA式初音,未找到,,
+20,映り込み消,OTHER,Sour式初音,未找到,,
+20,映り込み消,OTHER,YYB式初音,未找到,,
+20,映り込み消,OTHER,Appearance Miku,未找到,,
+20,映り込み消,OTHER,TDA式初音,未找到,,
+21,喜び,EYE,Sour式初音,未找到,,
+21,喜び,EYE,YYB式初音,未找到,,
+21,喜び,EYE,Appearance Miku,未找到,,
+21,喜び,EYE,TDA式初音,未找到,,
+22,わぉ?!,OTHER,Sour式初音,未找到,,
+22,わぉ?!,OTHER,YYB式初音,未找到,,
+22,わぉ?!,OTHER,Appearance Miku,未找到,,
+22,わぉ?!,OTHER,TDA式初音,未找到,,
+23,なごみω,OTHER,Sour式初音,未找到,,
+23,なごみω,OTHER,YYB式初音,未找到,,
+23,なごみω,OTHER,Appearance Miku,未找到,,
+23,なごみω,OTHER,TDA式初音,未找到,,
+24,悲しむ,EYE,Sour式初音,未找到,,
+24,悲しむ,EYE,YYB式初音,未找到,,
+24,悲しむ,EYE,Appearance Miku,未找到,,
+24,悲しむ,EYE,TDA式初音,未找到,,
+25,敵意,OTHER,Sour式初音,未找到,,
+25,敵意,OTHER,YYB式初音,未找到,,
+25,敵意,OTHER,Appearance Miku,未找到,,
+25,敵意,OTHER,TDA式初音,未找到,,
+26,あ,MOUTH,Sour式初音,候选变体,あE,images/01_Sour/074_あE.png
+26,あ,MOUTH,YYB式初音,候选变体,xあ,images/02_YYB/059_xあ.png
+26,あ,MOUTH,Appearance Miku,完全同名,あ,images/03_Appearance/001_あ.png
+26,あ,MOUTH,TDA式初音,完全同名,あ,images/04_TDA/015_あ.png
+27,い,MOUTH,Sour式初音,候选变体,いE,images/01_Sour/076_いE.png
+27,い,MOUTH,YYB式初音,候选变体,xい,images/02_YYB/063_xい.png
+27,い,MOUTH,Appearance Miku,完全同名,い,images/03_Appearance/002_い.png
+27,い,MOUTH,TDA式初音,完全同名,い,images/04_TDA/016_い.png
+28,う,MOUTH,Sour式初音,候选变体,うE,images/01_Sour/078_うE.png
+28,う,MOUTH,YYB式初音,候选变体,xう,images/02_YYB/068_xう.png
+28,う,MOUTH,Appearance Miku,完全同名,う,images/03_Appearance/003_う.png
+28,う,MOUTH,TDA式初音,完全同名,う,images/04_TDA/017_う.png
+29,え,MOUTH,Sour式初音,候选变体,えE,images/01_Sour/080_えE.png
+29,え,MOUTH,YYB式初音,候选变体,xえ,images/02_YYB/069_xえ.png
+29,え,MOUTH,Appearance Miku,完全同名,え,images/03_Appearance/004_え.png
+29,え,MOUTH,TDA式初音,完全同名,え,images/04_TDA/018_え.png
+30,お,MOUTH,Sour式初音,候选变体,おE,images/01_Sour/082_おE.png
+30,お,MOUTH,YYB式初音,候选变体,xお,images/02_YYB/070_xお.png
+30,お,MOUTH,Appearance Miku,完全同名,お,images/03_Appearance/005_お.png
+30,お,MOUTH,TDA式初音,完全同名,お,images/04_TDA/019_お.png
+31,あ２,MOUTH,Sour式初音,候选变体,あ2E,images/01_Sour/075_あ2E.png
+31,あ２,MOUTH,YYB式初音,候选变体,xあ２,images/02_YYB/060_xあ２.png
+31,あ２,MOUTH,Appearance Miku,未找到,,
+31,あ２,MOUTH,TDA式初音,完全同名,あ２,images/04_TDA/020_あ２.png
+32,ん,MOUTH,Sour式初音,完全同名,ん,images/01_Sour/029_ん.png
+32,ん,MOUTH,YYB式初音,完全同名,ん,images/02_YYB/033_ん.png
+32,ん,MOUTH,Appearance Miku,未找到,,
+32,ん,MOUTH,TDA式初音,完全同名,ん,images/04_TDA/021_ん.png
+33,▲,MOUTH,Sour式初音,候选变体,▲E,images/01_Sour/083_▲E.png
+33,▲,MOUTH,YYB式初音,未找到,,
+33,▲,MOUTH,Appearance Miku,完全同名,▲,images/03_Appearance/006_▲.png
+33,▲,MOUTH,TDA式初音,完全同名,▲,images/04_TDA/022_▲.png
+34,∧,MOUTH,Sour式初音,完全同名,∧,images/01_Sour/030_∧.png
+34,∧,MOUTH,YYB式初音,完全同名,∧,images/02_YYB/034_∧.png
+34,∧,MOUTH,Appearance Miku,完全同名,∧,images/03_Appearance/007_∧.png
+34,∧,MOUTH,TDA式初音,完全同名,∧,images/04_TDA/023_∧.png
+35,□,MOUTH,Sour式初音,候选变体,□E,images/01_Sour/084_□E.png
+35,□,MOUTH,YYB式初音,完全同名,□,images/02_YYB/035_□.png
+35,□,MOUTH,Appearance Miku,未找到,,
+35,□,MOUTH,TDA式初音,完全同名,□,images/04_TDA/024_□.png
+36,ワ,MOUTH,Sour式初音,候选变体,ワE,images/01_Sour/085_ワE.png
+36,ワ,MOUTH,YYB式初音,未找到,,
+36,ワ,MOUTH,Appearance Miku,完全同名,ワ,images/03_Appearance/010_ワ.png
+36,ワ,MOUTH,TDA式初音,完全同名,ワ,images/04_TDA/025_ワ.png
+37,ω,MOUTH,Sour式初音,候选变体,ωE,images/01_Sour/087_ωE.png
+37,ω,MOUTH,YYB式初音,完全同名,ω,images/02_YYB/036_ω.png
+37,ω,MOUTH,Appearance Miku,完全同名,ω,images/03_Appearance/008_ω.png
+37,ω,MOUTH,TDA式初音,完全同名,ω,images/04_TDA/026_ω.png
+38,ω□,MOUTH,Sour式初音,候选变体,ω□E,images/01_Sour/088_ω□E.png
+38,ω□,MOUTH,YYB式初音,完全同名,ω□,images/02_YYB/037_ω□.png
+38,ω□,MOUTH,Appearance Miku,完全同名,ω□,images/03_Appearance/009_ω□.png
+38,ω□,MOUTH,TDA式初音,完全同名,ω□,images/04_TDA/027_ω□.png
+39,にやり,MOUTH,Sour式初音,候选变体,にやりE,images/01_Sour/089_にやりE.png
+39,にやり,MOUTH,YYB式初音,完全同名,にやり,images/02_YYB/038_にやり.png
+39,にやり,MOUTH,Appearance Miku,完全同名,にやり,images/03_Appearance/015_にやり.png
+39,にやり,MOUTH,TDA式初音,完全同名,にやり,images/04_TDA/028_にやり.png
+40,にやり２,MOUTH,Sour式初音,未找到,,
+40,にやり２,MOUTH,YYB式初音,未找到,,
+40,にやり２,MOUTH,Appearance Miku,未找到,,
+40,にやり２,MOUTH,TDA式初音,完全同名,にやり２,images/04_TDA/029_にやり２.png
+41,にっこり,MOUTH,Sour式初音,候选变体,にっこりE,images/01_Sour/090_にっこりE.png
+41,にっこり,MOUTH,YYB式初音,未找到,,
+41,にっこり,MOUTH,Appearance Miku,未找到,,
+41,にっこり,MOUTH,TDA式初音,完全同名,にっこり,images/04_TDA/030_にっこり.png
+42,ぺろっ,MOUTH,Sour式初音,未找到,,
+42,ぺろっ,MOUTH,YYB式初音,完全同名,ぺろっ,images/02_YYB/039_ぺろっ.png
+42,ぺろっ,MOUTH,Appearance Miku,未找到,,
+42,ぺろっ,MOUTH,TDA式初音,完全同名,ぺろっ,images/04_TDA/031_ぺろっ.png
+43,てへぺろ,MOUTH,Sour式初音,未找到,,
+43,てへぺろ,MOUTH,YYB式初音,未找到,,
+43,てへぺろ,MOUTH,Appearance Miku,未找到,,
+43,てへぺろ,MOUTH,TDA式初音,完全同名,てへぺろ,images/04_TDA/032_てへぺろ.png
+44,てへぺろ２,MOUTH,Sour式初音,未找到,,
+44,てへぺろ２,MOUTH,YYB式初音,未找到,,
+44,てへぺろ２,MOUTH,Appearance Miku,未找到,,
+44,てへぺろ２,MOUTH,TDA式初音,完全同名,てへぺろ２,images/04_TDA/033_てへぺろ２.png
+45,口角上げ,MOUTH,Sour式初音,完全同名,口角上げ,images/01_Sour/032_口角上げ.png
+45,口角上げ,MOUTH,YYB式初音,完全同名,口角上げ,images/02_YYB/041_口角上げ.png
+45,口角上げ,MOUTH,Appearance Miku,未找到,,
+45,口角上げ,MOUTH,TDA式初音,完全同名,口角上げ,images/04_TDA/034_口角上げ.png
+46,口角下げ,MOUTH,Sour式初音,完全同名,口角下げ,images/01_Sour/033_口角下げ.png
+46,口角下げ,MOUTH,YYB式初音,完全同名,口角下げ,images/02_YYB/044_口角下げ.png
+46,口角下げ,MOUTH,Appearance Miku,未找到,,
+46,口角下げ,MOUTH,TDA式初音,完全同名,口角下げ,images/04_TDA/035_口角下げ.png
+47,口横広げ,MOUTH,Sour式初音,完全同名,口横広げ,images/01_Sour/034_口横広げ.png
+47,口横広げ,MOUTH,YYB式初音,完全同名,口横広げ,images/02_YYB/047_口横広げ.png
+47,口横広げ,MOUTH,Appearance Miku,未找到,,
+47,口横広げ,MOUTH,TDA式初音,完全同名,口横広げ,images/04_TDA/036_口横広げ.png
+48,歯無し上,MOUTH,Sour式初音,未找到,,
+48,歯無し上,MOUTH,YYB式初音,未找到,,
+48,歯無し上,MOUTH,Appearance Miku,未找到,,
+48,歯無し上,MOUTH,TDA式初音,完全同名,歯無し上,images/04_TDA/037_歯無し上.png
+49,歯無し下,MOUTH,Sour式初音,未找到,,
+49,歯無し下,MOUTH,YYB式初音,未找到,,
+49,歯無し下,MOUTH,Appearance Miku,未找到,,
+49,歯無し下,MOUTH,TDA式初音,完全同名,歯無し下,images/04_TDA/038_歯無し下.png
+50,真面目,OTHER,Sour式初音,完全同名,真面目,images/01_Sour/036_真面目.png
+50,真面目,OTHER,YYB式初音,完全同名,真面目,images/02_YYB/001_真面目.png
+50,真面目,OTHER,Appearance Miku,完全同名,真面目,images/03_Appearance/029_真面目.png
+50,真面目,OTHER,TDA式初音,完全同名,真面目,images/04_TDA/049_真面目.png
+51,困る,OTHER,Sour式初音,完全同名,困る,images/01_Sour/039_困る.png
+51,困る,OTHER,YYB式初音,完全同名,困る,images/02_YYB/002_困る.png
+51,困る,OTHER,Appearance Miku,完全同名,困る,images/03_Appearance/030_困る.png
+51,困る,OTHER,TDA式初音,完全同名,困る,images/04_TDA/050_困る.png
+52,にこり,OTHER,Sour式初音,完全同名,にこり,images/01_Sour/042_にこり.png
+52,にこり,OTHER,YYB式初音,完全同名,にこり,images/02_YYB/004_にこり.png
+52,にこり,OTHER,Appearance Miku,完全同名,にこり,images/03_Appearance/031_にこり.png
+52,にこり,OTHER,TDA式初音,完全同名,にこり,images/04_TDA/051_にこり.png
+53,怒り,OTHER,Sour式初音,完全同名,怒り,images/01_Sour/045_怒り.png
+53,怒り,OTHER,YYB式初音,完全同名,怒り,images/02_YYB/005_怒り.png
+53,怒り,OTHER,Appearance Miku,完全同名,怒り,images/03_Appearance/032_怒り.png
+53,怒り,OTHER,TDA式初音,完全同名,怒り,images/04_TDA/052_怒り.png
+54,上,OTHER,Sour式初音,完全同名,上,images/01_Sour/051_上.png
+54,上,OTHER,YYB式初音,完全同名,上,images/02_YYB/007_上.png
+54,上,OTHER,Appearance Miku,完全同名,上,images/03_Appearance/037_上.png
+54,上,OTHER,TDA式初音,完全同名,上,images/04_TDA/053_上.png
+55,下,OTHER,Sour式初音,完全同名,下,images/01_Sour/054_下.png
+55,下,OTHER,YYB式初音,完全同名,下,images/02_YYB/010_下.png
+55,下,OTHER,Appearance Miku,完全同名,下,images/03_Appearance/038_下.png
+55,下,OTHER,TDA式初音,完全同名,下,images/04_TDA/054_下.png

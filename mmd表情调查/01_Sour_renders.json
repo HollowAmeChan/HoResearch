@@ -1,0 +1,742 @@
+{
+  "collection": "Sour式初音",
+  "armature": "Black_arm",
+  "mesh": "Black_mesh",
+  "head_bone": "頭",
+  "head_world": [
+    -3.308432087317792e-13,
+    -0.010974197648465633,
+    1.3738934993743896
+  ],
+  "face_material": "face",
+  "face_bounds": [
+    [
+      -0.09417439997196198,
+      -0.11705587059259415,
+      1.3610708713531494
+    ],
+    [
+      0.09417439997196198,
+      1.4697759979753755e-05,
+      1.5725282430648804
+    ]
+  ],
+  "camera_location": [
+    -3.308432087317792e-13,
+    -1.2584576606750488,
+    1.454508900642395
+  ],
+  "camera_target": [
+    -3.308432087317792e-13,
+    -0.05852058529853821,
+    1.4667994976043701
+  ],
+  "orthographic_scale": 0.25797799348831174,
+  "folder": "01_Sour",
+  "source_shape_key_names": [
+    "Basis",
+    "mmd_sdef_c",
+    "mmd_sdef_r0",
+    "mmd_sdef_r1",
+    "まばたき",
+    "笑い",
+    "ウィンク",
+    "ウィンク右",
+    "ウィンク２",
+    "ｳｨﾝｸ２右",
+    "なごみ",
+    "はぅ",
+    "はぅ左",
+    "はぅ右",
+    "びっくり",
+    "じと目",
+    "ｷﾘｯ",
+    "なぬ！",
+    "はちゅ目",
+    "はちゅ目縦潰れ",
+    "はちゅ目横潰れ",
+    "笑い目",
+    "悲しい目",
+    "はぁと",
+    "星目",
+    "星目2",
+    "花目",
+    "ねこ目",
+    "恐ろしい子！",
+    "瞳小",
+    "瞳大",
+    "瞳細",
+    "ん",
+    "∧",
+    "m",
+    "口角上げ",
+    "口角下げ",
+    "口横広げ",
+    "口横狭い",
+    "真面目",
+    "真面目左",
+    "真面目右",
+    "困る",
+    "困る左",
+    "困る右",
+    "にこり",
+    "にこり左",
+    "にこり右",
+    "怒り",
+    "怒り左",
+    "怒り右",
+    "悲しい",
+    "悲しい左",
+    "悲しい右",
+    "上",
+    "上左",
+    "上右",
+    "下",
+    "下左",
+    "下右",
+    "粗",
+    "長",
+    "短",
+    "照れ",
+    "照れ２",
+    "がーん",
+    "瞳1off",
+    "瞳2off",
+    "HL",
+    "HL２",
+    "犬歯",
+    "歯無し",
+    "メガネ",
+    "Excited!",
+    "涙",
+    "涙2",
+    "涙3",
+    "あE",
+    "あ2E",
+    "いE",
+    "い2E",
+    "うE",
+    "う2E",
+    "えE",
+    "え2E",
+    "おE",
+    "▲E",
+    "□E",
+    "ワE",
+    "叫びE",
+    "ωE",
+    "ω□E",
+    "にやりE",
+    "にっこりE",
+    "いやだE",
+    "なんでE",
+    "睫毛",
+    "HP"
+  ],
+  "expressions": [
+    {
+      "index": 1,
+      "name": "まばたき",
+      "value": 1.0,
+      "path": "images/01_Sour/001_まばたき.png"
+    },
+    {
+      "index": 2,
+      "name": "笑い",
+      "value": 1.0,
+      "path": "images/01_Sour/002_笑い.png"
+    },
+    {
+      "index": 3,
+      "name": "ウィンク",
+      "value": 1.0,
+      "path": "images/01_Sour/003_ウィンク.png"
+    },
+    {
+      "index": 4,
+      "name": "ウィンク右",
+      "value": 1.0,
+      "path": "images/01_Sour/004_ウィンク右.png"
+    },
+    {
+      "index": 5,
+      "name": "ウィンク２",
+      "value": 1.0,
+      "path": "images/01_Sour/005_ウィンク２.png"
+    },
+    {
+      "index": 6,
+      "name": "ｳｨﾝｸ２右",
+      "value": 1.0,
+      "path": "images/01_Sour/006_ｳｨﾝｸ２右.png"
+    },
+    {
+      "index": 7,
+      "name": "なごみ",
+      "value": 1.0,
+      "path": "images/01_Sour/007_なごみ.png"
+    },
+    {
+      "index": 8,
+      "name": "はぅ",
+      "value": 1.0,
+      "path": "images/01_Sour/008_はぅ.png"
+    },
+    {
+      "index": 9,
+      "name": "はぅ左",
+      "value": 1.0,
+      "path": "images/01_Sour/009_はぅ左.png"
+    },
+    {
+      "index": 10,
+      "name": "はぅ右",
+      "value": 1.0,
+      "path": "images/01_Sour/010_はぅ右.png"
+    },
+    {
+      "index": 11,
+      "name": "びっくり",
+      "value": 1.0,
+      "path": "images/01_Sour/011_びっくり.png"
+    },
+    {
+      "index": 12,
+      "name": "じと目",
+      "value": 1.0,
+      "path": "images/01_Sour/012_じと目.png"
+    },
+    {
+      "index": 13,
+      "name": "ｷﾘｯ",
+      "value": 1.0,
+      "path": "images/01_Sour/013_ｷﾘｯ.png"
+    },
+    {
+      "index": 14,
+      "name": "なぬ！",
+      "value": 1.0,
+      "path": "images/01_Sour/014_なぬ！.png"
+    },
+    {
+      "index": 15,
+      "name": "はちゅ目",
+      "value": 1.0,
+      "path": "images/01_Sour/015_はちゅ目.png"
+    },
+    {
+      "index": 16,
+      "name": "はちゅ目縦潰れ",
+      "value": 1.0,
+      "path": "images/01_Sour/016_はちゅ目縦潰れ.png"
+    },
+    {
+      "index": 17,
+      "name": "はちゅ目横潰れ",
+      "value": 1.0,
+      "path": "images/01_Sour/017_はちゅ目横潰れ.png"
+    },
+    {
+      "index": 18,
+      "name": "笑い目",
+      "value": 1.0,
+      "path": "images/01_Sour/018_笑い目.png"
+    },
+    {
+      "index": 19,
+      "name": "悲しい目",
+      "value": 1.0,
+      "path": "images/01_Sour/019_悲しい目.png"
+    },
+    {
+      "index": 20,
+      "name": "はぁと",
+      "value": 1.0,
+      "path": "images/01_Sour/020_はぁと.png"
+    },
+    {
+      "index": 21,
+      "name": "星目",
+      "value": 1.0,
+      "path": "images/01_Sour/021_星目.png"
+    },
+    {
+      "index": 22,
+      "name": "星目2",
+      "value": 1.0,
+      "path": "images/01_Sour/022_星目2.png"
+    },
+    {
+      "index": 23,
+      "name": "花目",
+      "value": 1.0,
+      "path": "images/01_Sour/023_花目.png"
+    },
+    {
+      "index": 24,
+      "name": "ねこ目",
+      "value": 1.0,
+      "path": "images/01_Sour/024_ねこ目.png"
+    },
+    {
+      "index": 25,
+      "name": "恐ろしい子！",
+      "value": 1.0,
+      "path": "images/01_Sour/025_恐ろしい子！.png"
+    },
+    {
+      "index": 26,
+      "name": "瞳小",
+      "value": 1.0,
+      "path": "images/01_Sour/026_瞳小.png"
+    },
+    {
+      "index": 27,
+      "name": "瞳大",
+      "value": 1.0,
+      "path": "images/01_Sour/027_瞳大.png"
+    },
+    {
+      "index": 28,
+      "name": "瞳細",
+      "value": 1.0,
+      "path": "images/01_Sour/028_瞳細.png"
+    },
+    {
+      "index": 29,
+      "name": "ん",
+      "value": 1.0,
+      "path": "images/01_Sour/029_ん.png"
+    },
+    {
+      "index": 30,
+      "name": "∧",
+      "value": 1.0,
+      "path": "images/01_Sour/030_∧.png"
+    },
+    {
+      "index": 31,
+      "name": "m",
+      "value": 1.0,
+      "path": "images/01_Sour/031_m.png"
+    },
+    {
+      "index": 32,
+      "name": "口角上げ",
+      "value": 1.0,
+      "path": "images/01_Sour/032_口角上げ.png"
+    },
+    {
+      "index": 33,
+      "name": "口角下げ",
+      "value": 1.0,
+      "path": "images/01_Sour/033_口角下げ.png"
+    },
+    {
+      "index": 34,
+      "name": "口横広げ",
+      "value": 1.0,
+      "path": "images/01_Sour/034_口横広げ.png"
+    },
+    {
+      "index": 35,
+      "name": "口横狭い",
+      "value": 1.0,
+      "path": "images/01_Sour/035_口横狭い.png"
+    },
+    {
+      "index": 36,
+      "name": "真面目",
+      "value": 1.0,
+      "path": "images/01_Sour/036_真面目.png"
+    },
+    {
+      "index": 37,
+      "name": "真面目左",
+      "value": 1.0,
+      "path": "images/01_Sour/037_真面目左.png"
+    },
+    {
+      "index": 38,
+      "name": "真面目右",
+      "value": 1.0,
+      "path": "images/01_Sour/038_真面目右.png"
+    },
+    {
+      "index": 39,
+      "name": "困る",
+      "value": 1.0,
+      "path": "images/01_Sour/039_困る.png"
+    },
+    {
+      "index": 40,
+      "name": "困る左",
+      "value": 1.0,
+      "path": "images/01_Sour/040_困る左.png"
+    },
+    {
+      "index": 41,
+      "name": "困る右",
+      "value": 1.0,
+      "path": "images/01_Sour/041_困る右.png"
+    },
+    {
+      "index": 42,
+      "name": "にこり",
+      "value": 1.0,
+      "path": "images/01_Sour/042_にこり.png"
+    },
+    {
+      "index": 43,
+      "name": "にこり左",
+      "value": 1.0,
+      "path": "images/01_Sour/043_にこり左.png"
+    },
+    {
+      "index": 44,
+      "name": "にこり右",
+      "value": 1.0,
+      "path": "images/01_Sour/044_にこり右.png"
+    },
+    {
+      "index": 45,
+      "name": "怒り",
+      "value": 1.0,
+      "path": "images/01_Sour/045_怒り.png"
+    },
+    {
+      "index": 46,
+      "name": "怒り左",
+      "value": 1.0,
+      "path": "images/01_Sour/046_怒り左.png"
+    },
+    {
+      "index": 47,
+      "name": "怒り右",
+      "value": 1.0,
+      "path": "images/01_Sour/047_怒り右.png"
+    },
+    {
+      "index": 48,
+      "name": "悲しい",
+      "value": 1.0,
+      "path": "images/01_Sour/048_悲しい.png"
+    },
+    {
+      "index": 49,
+      "name": "悲しい左",
+      "value": 1.0,
+      "path": "images/01_Sour/049_悲しい左.png"
+    },
+    {
+      "index": 50,
+      "name": "悲しい右",
+      "value": 1.0,
+      "path": "images/01_Sour/050_悲しい右.png"
+    },
+    {
+      "index": 51,
+      "name": "上",
+      "value": 1.0,
+      "path": "images/01_Sour/051_上.png"
+    },
+    {
+      "index": 52,
+      "name": "上左",
+      "value": 1.0,
+      "path": "images/01_Sour/052_上左.png"
+    },
+    {
+      "index": 53,
+      "name": "上右",
+      "value": 1.0,
+      "path": "images/01_Sour/053_上右.png"
+    },
+    {
+      "index": 54,
+      "name": "下",
+      "value": 1.0,
+      "path": "images/01_Sour/054_下.png"
+    },
+    {
+      "index": 55,
+      "name": "下左",
+      "value": 1.0,
+      "path": "images/01_Sour/055_下左.png"
+    },
+    {
+      "index": 56,
+      "name": "下右",
+      "value": 1.0,
+      "path": "images/01_Sour/056_下右.png"
+    },
+    {
+      "index": 57,
+      "name": "粗",
+      "value": 1.0,
+      "path": "images/01_Sour/057_粗.png"
+    },
+    {
+      "index": 58,
+      "name": "長",
+      "value": 1.0,
+      "path": "images/01_Sour/058_長.png"
+    },
+    {
+      "index": 59,
+      "name": "短",
+      "value": 1.0,
+      "path": "images/01_Sour/059_短.png"
+    },
+    {
+      "index": 60,
+      "name": "照れ",
+      "value": 1.0,
+      "path": "images/01_Sour/060_照れ.png"
+    },
+    {
+      "index": 61,
+      "name": "照れ２",
+      "value": 1.0,
+      "path": "images/01_Sour/061_照れ２.png"
+    },
+    {
+      "index": 62,
+      "name": "がーん",
+      "value": 1.0,
+      "path": "images/01_Sour/062_がーん.png"
+    },
+    {
+      "index": 63,
+      "name": "瞳1off",
+      "value": 1.0,
+      "path": "images/01_Sour/063_瞳1off.png"
+    },
+    {
+      "index": 64,
+      "name": "瞳2off",
+      "value": 1.0,
+      "path": "images/01_Sour/064_瞳2off.png"
+    },
+    {
+      "index": 65,
+      "name": "HL",
+      "value": 1.0,
+      "path": "images/01_Sour/065_HL.png"
+    },
+    {
+      "index": 66,
+      "name": "HL２",
+      "value": 1.0,
+      "path": "images/01_Sour/066_HL２.png"
+    },
+    {
+      "index": 67,
+      "name": "犬歯",
+      "value": 1.0,
+      "path": "images/01_Sour/067_犬歯.png"
+    },
+    {
+      "index": 68,
+      "name": "歯無し",
+      "value": 1.0,
+      "path": "images/01_Sour/068_歯無し.png"
+    },
+    {
+      "index": 69,
+      "name": "メガネ",
+      "value": 1.0,
+      "path": "images/01_Sour/069_メガネ.png"
+    },
+    {
+      "index": 70,
+      "name": "Excited!",
+      "value": 1.0,
+      "path": "images/01_Sour/070_Excited!.png"
+    },
+    {
+      "index": 71,
+      "name": "涙",
+      "value": 1.0,
+      "path": "images/01_Sour/071_涙.png"
+    },
+    {
+      "index": 72,
+      "name": "涙2",
+      "value": 1.0,
+      "path": "images/01_Sour/072_涙2.png"
+    },
+    {
+      "index": 73,
+      "name": "涙3",
+      "value": 1.0,
+      "path": "images/01_Sour/073_涙3.png"
+    },
+    {
+      "index": 74,
+      "name": "あE",
+      "value": 1.0,
+      "path": "images/01_Sour/074_あE.png"
+    },
+    {
+      "index": 75,
+      "name": "あ2E",
+      "value": 1.0,
+      "path": "images/01_Sour/075_あ2E.png"
+    },
+    {
+      "index": 76,
+      "name": "いE",
+      "value": 1.0,
+      "path": "images/01_Sour/076_いE.png"
+    },
+    {
+      "index": 77,
+      "name": "い2E",
+      "value": 1.0,
+      "path": "images/01_Sour/077_い2E.png"
+    },
+    {
+      "index": 78,
+      "name": "うE",
+      "value": 1.0,
+      "path": "images/01_Sour/078_うE.png"
+    },
+    {
+      "index": 79,
+      "name": "う2E",
+      "value": 1.0,
+      "path": "images/01_Sour/079_う2E.png"
+    },
+    {
+      "index": 80,
+      "name": "えE",
+      "value": 1.0,
+      "path": "images/01_Sour/080_えE.png"
+    },
+    {
+      "index": 81,
+      "name": "え2E",
+      "value": 1.0,
+      "path": "images/01_Sour/081_え2E.png"
+    },
+    {
+      "index": 82,
+      "name": "おE",
+      "value": 1.0,
+      "path": "images/01_Sour/082_おE.png"
+    },
+    {
+      "index": 83,
+      "name": "▲E",
+      "value": 1.0,
+      "path": "images/01_Sour/083_▲E.png"
+    },
+    {
+      "index": 84,
+      "name": "□E",
+      "value": 1.0,
+      "path": "images/01_Sour/084_□E.png"
+    },
+    {
+      "index": 85,
+      "name": "ワE",
+      "value": 1.0,
+      "path": "images/01_Sour/085_ワE.png"
+    },
+    {
+      "index": 86,
+      "name": "叫びE",
+      "value": 1.0,
+      "path": "images/01_Sour/086_叫びE.png"
+    },
+    {
+      "index": 87,
+      "name": "ωE",
+      "value": 1.0,
+      "path": "images/01_Sour/087_ωE.png"
+    },
+    {
+      "index": 88,
+      "name": "ω□E",
+      "value": 1.0,
+      "path": "images/01_Sour/088_ω□E.png"
+    },
+    {
+      "index": 89,
+      "name": "にやりE",
+      "value": 1.0,
+      "path": "images/01_Sour/089_にやりE.png"
+    },
+    {
+      "index": 90,
+      "name": "にっこりE",
+      "value": 1.0,
+      "path": "images/01_Sour/090_にっこりE.png"
+    },
+    {
+      "index": 91,
+      "name": "いやだE",
+      "value": 1.0,
+      "path": "images/01_Sour/091_いやだE.png"
+    },
+    {
+      "index": 92,
+      "name": "なんでE",
+      "value": 1.0,
+      "path": "images/01_Sour/092_なんでE.png"
+    },
+    {
+      "index": 93,
+      "name": "睫毛",
+      "value": 1.0,
+      "path": "images/01_Sour/093_睫毛.png"
+    },
+    {
+      "index": 94,
+      "name": "HP",
+      "value": 1.0,
+      "path": "images/01_Sour/094_HP.png"
+    }
+  ],
+  "neutral": "images/01_Sour/000_基准.png",
+  "seconds": 97.22,
+  "context_examples": [
+    {
+      "name": "はちゅ目縦潰れ",
+      "context_weights": {
+        "はちゅ目": 1.0
+      },
+      "primary_value": 1.0,
+      "baseline_path": "images/01_Sour/015_はちゅ目.png",
+      "path": "images/01_Sour/context_はちゅ目縦潰れ+はちゅ目.png"
+    },
+    {
+      "name": "はちゅ目横潰れ",
+      "context_weights": {
+        "はちゅ目": 1.0
+      },
+      "primary_value": 1.0,
+      "baseline_path": "images/01_Sour/015_はちゅ目.png",
+      "path": "images/01_Sour/context_はちゅ目横潰れ+はちゅ目.png"
+    },
+    {
+      "name": "犬歯",
+      "context_weights": {
+        "あE": 1.0
+      },
+      "primary_value": 1.0,
+      "baseline_path": "images/01_Sour/074_あE.png",
+      "path": "images/01_Sour/context_犬歯+あE.png"
+    },
+    {
+      "name": "歯無し",
+      "context_weights": {
+        "あE": 1.0
+      },
+      "primary_value": 1.0,
+      "baseline_path": "images/01_Sour/074_あE.png",
+      "path": "images/01_Sour/context_歯無し+あE.png"
+    }
+  ]
+}

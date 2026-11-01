@@ -1,0 +1,23 @@
+# 文本统一 LF，避免跨 Windows / GitHub 浏览时出现整文件换行差异。
+* text=auto
+*.md text eol=lf
+*.txt text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.py text eol=lf
+*.ps1 text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# 图片与其他二进制资料保持原样。
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.pdf binary
+*.blend binary
+*.zip binary
+*.7z binary

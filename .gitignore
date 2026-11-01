@@ -1,0 +1,57 @@
+# 操作系统与编辑器本地文件
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python 缓存与虚拟环境
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# 工具依赖、缓存与本地临时资料
+node_modules/
+.cache/
+.tmp/
+.local/
+_local/
+_scratch/
+
+# 本机配置与凭据；配置示例可以提交
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+# 运行日志与临时文件；保留最终图片、CSV、JSON 和原始来源快照
+*.log
+*.tmp
+*.temp
+*.bak
+
+# Blender 原始工程、自动备份与物理缓存
+# 研究结论、渲染图片和复现脚本正常入库；大工程保留在本地。
+*.blend
+*.blend[0-9]
+*.blend[0-9][0-9]
+blendcache_*/
+*.bphys
+
+# 临时 Unity 工程的自动生成目录
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/

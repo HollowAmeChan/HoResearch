@@ -1,0 +1,361 @@
+{
+  "collection": "Appearance Miku",
+  "armature": "Appearance Miku_arm",
+  "mesh": "Appearance Miku_mesh",
+  "head_bone": "頭",
+  "head_world": [
+    0.0,
+    -0.03364959731698036,
+    1.3057775497436523
+  ],
+  "face_material": "顔",
+  "face_bounds": [
+    [
+      -0.08137291669845581,
+      -0.13361777365207672,
+      1.2536102533340454
+    ],
+    [
+      0.08137291669845581,
+      0.014226933009922504,
+      1.4869014024734497
+    ]
+  ],
+  "camera_location": [
+    6.217183567969187e-08,
+    -1.259155035018921,
+    1.4062663316726685
+  ],
+  "camera_target": [
+    0.0,
+    -0.059695418924093246,
+    1.3702558279037476
+  ],
+  "orthographic_scale": 0.2846152019500732,
+  "folder": "03_Appearance",
+  "source_shape_key_names": [
+    "Basis",
+    "mmd_sdef_c",
+    "mmd_sdef_r0",
+    "mmd_sdef_r1",
+    "あ",
+    "い",
+    "う",
+    "え",
+    "お",
+    "▲",
+    "∧",
+    "ω",
+    "ω□",
+    "ワ",
+    "ゆ",
+    "わらい口",
+    "叫び",
+    "えー",
+    "にやり",
+    "まばたき",
+    "笑い",
+    "ｷﾞｭｯ",
+    "はぅ",
+    "なごみ",
+    "びっくり",
+    "じと目",
+    "ｷﾘｯ",
+    "たれ目",
+    "つり目",
+    "笑い目",
+    "なぬ！",
+    "鼻線消し",
+    "真面目",
+    "困る",
+    "にこり",
+    "怒り",
+    "平行",
+    "近",
+    "離",
+    "短",
+    "上",
+    "下",
+    "前",
+    "下睫毛太",
+    "下睫毛消",
+    "瞳小",
+    "瞳縦",
+    "HL消1",
+    "HL消2"
+  ],
+  "expressions": [
+    {
+      "index": 1,
+      "name": "あ",
+      "value": 1.0,
+      "path": "images/03_Appearance/001_あ.png"
+    },
+    {
+      "index": 2,
+      "name": "い",
+      "value": 1.0,
+      "path": "images/03_Appearance/002_い.png"
+    },
+    {
+      "index": 3,
+      "name": "う",
+      "value": 1.0,
+      "path": "images/03_Appearance/003_う.png"
+    },
+    {
+      "index": 4,
+      "name": "え",
+      "value": 1.0,
+      "path": "images/03_Appearance/004_え.png"
+    },
+    {
+      "index": 5,
+      "name": "お",
+      "value": 1.0,
+      "path": "images/03_Appearance/005_お.png"
+    },
+    {
+      "index": 6,
+      "name": "▲",
+      "value": 1.0,
+      "path": "images/03_Appearance/006_▲.png"
+    },
+    {
+      "index": 7,
+      "name": "∧",
+      "value": 1.0,
+      "path": "images/03_Appearance/007_∧.png"
+    },
+    {
+      "index": 8,
+      "name": "ω",
+      "value": 1.0,
+      "path": "images/03_Appearance/008_ω.png"
+    },
+    {
+      "index": 9,
+      "name": "ω□",
+      "value": 1.0,
+      "path": "images/03_Appearance/009_ω□.png"
+    },
+    {
+      "index": 10,
+      "name": "ワ",
+      "value": 1.0,
+      "path": "images/03_Appearance/010_ワ.png"
+    },
+    {
+      "index": 11,
+      "name": "ゆ",
+      "value": 1.0,
+      "path": "images/03_Appearance/011_ゆ.png"
+    },
+    {
+      "index": 12,
+      "name": "わらい口",
+      "value": 1.0,
+      "path": "images/03_Appearance/012_わらい口.png"
+    },
+    {
+      "index": 13,
+      "name": "叫び",
+      "value": 1.0,
+      "path": "images/03_Appearance/013_叫び.png"
+    },
+    {
+      "index": 14,
+      "name": "えー",
+      "value": 1.0,
+      "path": "images/03_Appearance/014_えー.png"
+    },
+    {
+      "index": 15,
+      "name": "にやり",
+      "value": 1.0,
+      "path": "images/03_Appearance/015_にやり.png"
+    },
+    {
+      "index": 16,
+      "name": "まばたき",
+      "value": 1.0,
+      "path": "images/03_Appearance/016_まばたき.png"
+    },
+    {
+      "index": 17,
+      "name": "笑い",
+      "value": 1.0,
+      "path": "images/03_Appearance/017_笑い.png"
+    },
+    {
+      "index": 18,
+      "name": "ｷﾞｭｯ",
+      "value": 1.0,
+      "path": "images/03_Appearance/018_ｷﾞｭｯ.png"
+    },
+    {
+      "index": 19,
+      "name": "はぅ",
+      "value": 1.0,
+      "path": "images/03_Appearance/019_はぅ.png"
+    },
+    {
+      "index": 20,
+      "name": "なごみ",
+      "value": 1.0,
+      "path": "images/03_Appearance/020_なごみ.png"
+    },
+    {
+      "index": 21,
+      "name": "びっくり",
+      "value": 1.0,
+      "path": "images/03_Appearance/021_びっくり.png"
+    },
+    {
+      "index": 22,
+      "name": "じと目",
+      "value": 1.0,
+      "path": "images/03_Appearance/022_じと目.png"
+    },
+    {
+      "index": 23,
+      "name": "ｷﾘｯ",
+      "value": 1.0,
+      "path": "images/03_Appearance/023_ｷﾘｯ.png"
+    },
+    {
+      "index": 24,
+      "name": "たれ目",
+      "value": 1.0,
+      "path": "images/03_Appearance/024_たれ目.png"
+    },
+    {
+      "index": 25,
+      "name": "つり目",
+      "value": 1.0,
+      "path": "images/03_Appearance/025_つり目.png"
+    },
+    {
+      "index": 26,
+      "name": "笑い目",
+      "value": 1.0,
+      "path": "images/03_Appearance/026_笑い目.png"
+    },
+    {
+      "index": 27,
+      "name": "なぬ！",
+      "value": 1.0,
+      "path": "images/03_Appearance/027_なぬ！.png"
+    },
+    {
+      "index": 28,
+      "name": "鼻線消し",
+      "value": 1.0,
+      "path": "images/03_Appearance/028_鼻線消し.png"
+    },
+    {
+      "index": 29,
+      "name": "真面目",
+      "value": 1.0,
+      "path": "images/03_Appearance/029_真面目.png"
+    },
+    {
+      "index": 30,
+      "name": "困る",
+      "value": 1.0,
+      "path": "images/03_Appearance/030_困る.png"
+    },
+    {
+      "index": 31,
+      "name": "にこり",
+      "value": 1.0,
+      "path": "images/03_Appearance/031_にこり.png"
+    },
+    {
+      "index": 32,
+      "name": "怒り",
+      "value": 1.0,
+      "path": "images/03_Appearance/032_怒り.png"
+    },
+    {
+      "index": 33,
+      "name": "平行",
+      "value": 1.0,
+      "path": "images/03_Appearance/033_平行.png"
+    },
+    {
+      "index": 34,
+      "name": "近",
+      "value": 1.0,
+      "path": "images/03_Appearance/034_近.png"
+    },
+    {
+      "index": 35,
+      "name": "離",
+      "value": 1.0,
+      "path": "images/03_Appearance/035_離.png"
+    },
+    {
+      "index": 36,
+      "name": "短",
+      "value": 1.0,
+      "path": "images/03_Appearance/036_短.png"
+    },
+    {
+      "index": 37,
+      "name": "上",
+      "value": 1.0,
+      "path": "images/03_Appearance/037_上.png"
+    },
+    {
+      "index": 38,
+      "name": "下",
+      "value": 1.0,
+      "path": "images/03_Appearance/038_下.png"
+    },
+    {
+      "index": 39,
+      "name": "前",
+      "value": 1.0,
+      "path": "images/03_Appearance/039_前.png"
+    },
+    {
+      "index": 40,
+      "name": "下睫毛太",
+      "value": 1.0,
+      "path": "images/03_Appearance/040_下睫毛太.png"
+    },
+    {
+      "index": 41,
+      "name": "下睫毛消",
+      "value": 1.0,
+      "path": "images/03_Appearance/041_下睫毛消.png"
+    },
+    {
+      "index": 42,
+      "name": "瞳小",
+      "value": 1.0,
+      "path": "images/03_Appearance/042_瞳小.png"
+    },
+    {
+      "index": 43,
+      "name": "瞳縦",
+      "value": 1.0,
+      "path": "images/03_Appearance/043_瞳縦.png"
+    },
+    {
+      "index": 44,
+      "name": "HL消1",
+      "value": 1.0,
+      "path": "images/03_Appearance/044_HL消1.png"
+    },
+    {
+      "index": 45,
+      "name": "HL消2",
+      "value": 1.0,
+      "path": "images/03_Appearance/045_HL消2.png"
+    }
+  ],
+  "neutral": "images/03_Appearance/000_基准.png",
+  "seconds": 44.01
+}
