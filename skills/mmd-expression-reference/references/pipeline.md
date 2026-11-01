@@ -17,6 +17,14 @@
 
 ## 稳定的接口
 
+### 日文 ZIP
+
+`extract_zip.py` 支持嵌套包中选定的内层 ZIP、传统 ZIP 加密、CP932 文件名和可配置的口令编码。必须由使用者提供已有的正确口令；先核对作者说明和许可。口令用 `--password-env` 指定环境变量名称，日文旧工具生成的密码可用 `--password-encoding cp932`。UTF-8 标记的文件名仍由 ZIP 标记决定。
+
+脚本保留原压缩包，拒绝覆盖现有解压目录、越界路径和符号链接。每个文件读取到 EOF 时校验 CRC，解压清单只存编码、大小、CRC 与来源哈希，不保存口令。部分解压失败时 `complete` 保持为假。
+
+### Blender
+
 - `bpy.ops.mmd_tools.import_model`：导入 MESH、ARMATURE、MORPHS、DISPLAY；不导入 PHYSICS，缩放默认 0.08，不合并重叠顶点。
 - `mmd_tools.core.model.Model(root).morph_slider.bind()`：创建并绑定全类型控制滑块。placeholder 本身不渲染。
 - 找骨骼时同时检查 Blender 名称和 `pose_bone.mmd_bone.name_j`；导入器可能将左右名称转换为 `.L/.R`。

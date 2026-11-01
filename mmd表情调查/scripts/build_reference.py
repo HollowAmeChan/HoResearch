@@ -94,10 +94,9 @@ def read_data():
     with (OUT / "附录" / "HoTools_shapekey_catalog.csv").open(encoding="utf-8-sig", newline="") as f:
         presets = [r for r in csv.DictReader(f) if r["standard"] == "MMD" and r["role"] == "TEMPLATE"]
     inventory = json.loads((OUT / "scene_inventory.json").read_text(encoding="utf-8"))
-    models = [
-        json.loads(f.read_text(encoding="utf-8"))
-        for f in sorted(OUT.glob("0*_renders.json"))
-    ]
+    paths = [p for p in OUT.glob("*_renders.json") if re.match(r"^\d+_", p.name)]
+    paths.sort(key=lambda p: (int(p.name.split("_", 1)[0]), p.name))
+    models = [json.loads(p.read_text(encoding="utf-8")) for p in paths]
     return presets, inventory, models
 
 
@@ -175,7 +174,7 @@ def check_images(models, inventory):
     unchanged = []
     total = 0
     for model in models:
-        expected = len([n for n in model["source_shape_key_names"] if n not in {"Basis"} and not n.startswith("mmd_sdef_")])
+        expected = len(model["source_control_names"]) if "source_control_names" in model else len([n for n in model["source_shape_key_names"] if n not in {"Basis"} and not n.startswith("mmd_sdef_")])
         if len(model["expressions"]) != expected:
             issues.append(f"{model['collection']}: expected {expected}, got {len(model['expressions'])}")
         base = np.array(Image.open(OUT / model["neutral"]).convert("RGBA"), dtype=np.int16)
@@ -304,14 +303,15 @@ def build():
     lines = [
         "# MMD 表情参考", "",
         "- 制作日期：2026-11-01（Asia/Shanghai）。",
-        "- 源工程：`C:\\Users\\hhh12\\Desktop\\mmd表情研究.blend`；原始工程未覆盖保存。",
+        ("- 历史四模型来源：原 `mmd表情研究.blend` 工程；新增模型由 PMX 独立导入。原件及打包工作工程均保存在本机 `IGNORE/`。" if any(m.get("morph_driver") for m in models) else "- 当前模型来源：原 `mmd表情研究.blend` 工程；原件保存在本机 `IGNORE/`。"),
         f"- 主表以 lilxyzw 完整统计中的 **{len(rates)} 个原始表情名称**为准，按动作使用率从高到低排列；同频保持源文件顺序。",
         "- HoTools 的 **55 条 MMD TEMPLATE** 仅作为预设对照列，未收录的统计名称也全部保留。",
-        f"- 本次输出：**{sum(len(m['expressions']) for m in models)} 张单项形态键图 + {len(models)} 张基准图 + {context_count} 张组合辅助图**，全部为 **512 × 512 PNG**。",
-        "- 四个模型均以各自骨架的 **“頭”骨**定位，结合眼骨朝向与脸部材质包围盒确定正面正交机位。",
+        f"- 本次输出：**{sum(len(m['expressions']) for m in models)} 张单项表情/控制图 + {len(models)} 张基准图 + {context_count} 张组合辅助图**，全部为 **512 × 512 PNG**。",
+        f"- {len(models)} 个模型均以各自骨架的 **“頭”骨**定位，结合眼骨朝向与脸部材质包围盒确定正面正交机位。",
         "- 每次只激活一个实际形态键（值 1.0），其余归零。同一模型的机位、灯光和取景固定；128 渲染采样，透明背景。",
         "- 牙齿和特殊眼的组合辅助图另行启用一个基础键，**两个键均为 1.0**；图片明确标注组合，不与单项图混淆。",
-        "- 材质按工程磁盘保存状态原样使用。检查到的主要连接为 `MMDShaderDev` 等节点组，未检测到名含 `HoToon` 的节点；没有为此替换或重建材质。",
+        ("- 历史四模型沿用工程中的 `MMDShaderDev` 等原材质；新增自动导入模型使用 EEVEE Reference Toon，方案见各模型明细。材质差异不能直接视为表情差异。" if any(m.get("morph_driver") for m in models) else "- 当前模型沿用工程中的 `MMDShaderDev` 等原材质，方案见各模型明细。"),
+        ("- 原工程以实际形态键驱动；新增模型通过 mmd_tools 绑定的完整 morph 滑块驱动，保留材质、骨骼、UV 与组合类型。" if any(m.get("morph_driver") for m in models) else "- 当前列按原工程的实际网格形态键驱动与统计，完整 PMX morph 覆盖需另行核验。"),
         "- `Basis` 和 `mmd_sdef_c / mmd_sdef_r0 / mmd_sdef_r1` 是基准/辅助数据，不当作表情渲染。",
         "- 模型原有的换装、附件、局部调节键同样保留独立渲染，放入模型明细；头部取景下可能没有明显差异。",
         "- 此版本用于完整统计与实际模型的视觉对照，暂不据此宣称预设完整，也不修改插件中的预设。",
@@ -322,10 +322,10 @@ def build():
         "- **候选变体**：仅明确列出 `x` 前缀或 `E` 后缀的作者变体，供视觉研究；不计入完全同名覆盖，不据名称断言等价。",
         "- **未找到**：该模型没有对应键，也没有采用上述候选命名。不会生成一张基准图冒充该表情。",
         "- **HoTools 预设**：仅当该统计原名与现有 TEMPLATE 完全同名时标记“是”；不据此合并统计中的名称变体。",
-        "- lil 的原始名称、全半角、大小写及频率精度全部保留；即使四个模型都未找到图片，该行也会保留。",
+        f"- lil 的原始名称、全半角、大小写及频率精度全部保留；即使 {len(models)} 个模型都未找到图片，该行也会保留。",
         "- lil 使用率是 **483 个动作中的使用率**，不是模型拥有率；下方汇总为统计名称的匹配情况，不直接等同功能覆盖率。",
         "", "## 模型与统计名称对应", "",
-        "| 模型集合 | 骨架 | 实际形态键图 | 完全同名 | 全半角兼容 | 候选变体 | 未找到 | 全部原名与图片 |",
+        "| 模型集合 | 骨架 | 单项控制图 | 完全同名 | 全半角兼容 | 候选变体 | 未找到 | 全部原名与图片 |",
         "| --- | --- | ---: | ---: | ---: | ---: | ---: | --- |",
     ]
     for model in models:
@@ -336,7 +336,7 @@ def build():
         "", "## 无表情基准", "",
         "| " + " | ".join(m["collection"] for m in models) + " |",
         "| " + " | ".join("---" for _ in models) + " |",
-        "| " + " | ".join(image_tag(m["neutral"], m["collection"] + " 基准", 220) for m in models) + " |",
+        "| " + " | ".join(image_tag(m["neutral"], m["collection"] + " 基准", 220 if len(models) <= 4 else 160) for m in models) + " |",
         "", f"## lil 全部表情参考表（{len(rates)} 项，使用率降序）", "",
         "| 排名 | lil 统计原名 | 动作使用率 | HoTools 预设 | " + " | ".join(m["collection"] for m in models) + " |",
         "| ---: | --- | ---: | --- | " + " | ".join("---" for _ in models) + " |",
@@ -361,28 +361,33 @@ def build():
         lines.append("| " + " | ".join(cells) + " |")
     lines += [
         "", "## 模型独有项与全部渲染", "",
-        "以下页面列出各模型**全部实际形态键**，包括未出现在 lil 统计主表中的项目，方便下一轮交叉验证。", "",
+        "以下页面列出各模型**全部实际形态键或绑定 morph**，包括未出现在 lil 统计主表中的项目，方便下一轮交叉验证。", "",
     ]
     for model in models:
         overview = contact_sheet(model)
         details = [
-            f"# {model['collection']}：全部形态键参考", "",
+            f"# {model['collection']}：全部表情/控制参考", "",
             "[返回预设主表](../MMD%E8%A1%A8%E6%83%85%E5%8F%82%E8%80%83.md)", "",
             f"- 骨架：`{model['armature']}`；定位骨：`頭`。",
             f"- 网格：`{model['mesh']}`。",
-            f"- 全部 {len(model['expressions'])} 个非辅助形态键均已单独渲染；PNG 为 512 × 512。",
+            f"- 全部 {len(model['expressions'])} 个{'MMD morph 控制滑块' if model.get('morph_driver') else '非辅助形态键'}均已单独渲染；PNG 为 512 × 512。",
+            f"- 材质方案：`{model.get('material_profile', '工程原材质（MMDShaderDev 等）')}`。",
+            *([f"- 制作来源署名：{model['credit']}。"] if model.get("credit") else []),
+            *([f"- 源文件：`{model['source_filename']}`；SHA-256：`{model['source_sha256']}`。"] if model.get("source_filename") else []),
             "- 表内使用实际生成的 192 × 192 缩略图；点击缩略图可打开 512 × 512 原图。",
             f"- 主表以 lil 完整统计的 {len(rates)} 项为准，按使用率降序排列。“未用于主表”指未映射进统计主表，不表示该功能一定缺少预设。",
             "", "## 总览", "",
             f"![全部形态键总览](../{quote(overview, safe='/')})",
             "", "## 逐项图片", "",
-            "| 序号 | 模型原始形态键名 | 图片 | 主表关联 / 观察 |",
+            "| 序号 | 模型原始控制名 | 图片 | 主表关联 / 观察 |",
             "| ---: | --- | --- | --- |",
             f"| 000 | 基准（全部为 0） | {image_tag(model['neutral'], '基准', 192, '../')} | 无表情对照 |",
         ]
         for item in model["expressions"]:
             links = [r for r in mapping if r["model"] == model["collection"] and r["actual_shape_key"] == item["name"]]
             annotation = "；".join(f"#{r['rank']} {r['statistic_name']}（{r['match_type']}；{r['usage_percent']} %）" for r in links) or "未用于主表"
+            if item.get("type"):
+                annotation = f"{item['type']} morph；" + annotation
             if (model["collection"], item["name"]) in low_lookup:
                 annotation += "；头部画面变化很小，待核对"
             details.append(f"| {item['index']:03d} | {cell(item['name'])} | {image_tag(item['path'], item['name'], 192, '../')} | {cell(annotation)} |")
@@ -413,7 +418,7 @@ def build():
         "- `render_validation.json` 保留逐图 SHA-256、相对基准的像素差异和低变化项目；组合辅助图与其基础键图比较。",
         f"- 有 {len(low_change)} 个项目在头部画面中变化很小，明细中已标注；这可能是换装/附件键、隐藏部件、微小调整或需进一步检查的项目。",
         "- 图像差异只用于排查空白/重复结果，不代替表情语义和模型制作正确性的人工判断。",
-        "- 当前工程存在一处原有骨约束依赖循环，Blender 在载入时报告；渲染任务已完成，原工程未作修复。",
+        "- 历史四模型工程在载入时曾报告一处原有骨约束依赖循环，原工程未作修复；新增 PMX 为独立后台导入，不沿用旧工程。",
         "", "## lil 统计附录", "",
         "- [lilxyzw 完整统计表、精选列表、样本与统计口径](%E9%99%84%E5%BD%95/lil_MMD%E8%A1%A8%E6%83%85%E7%BB%9F%E8%AE%A1.md)",
         f"- 原始 Gist：<{GIST_URL}>。",
@@ -424,7 +429,7 @@ def build():
         "- `scene_inventory.json`：集合、骨架、形态键、材质、贴图清单。",
         "- `0*_renders.json`：每个模型的镜头、实际键名和图片路径。",
         f"- `lil统计与模型对应.csv`：按使用率降序排列的 {len(rates)} × {len(models)} 项统计名称与图片映射。",
-        "- `预设与模型对应.csv`：按预设原始顺序排列的 55 × 4 项名称映射。",
+        f"- `预设与模型对应.csv`：按预设原始顺序排列的 {len(presets)} × {len(models)} 项名称映射。",
         "- `render_validation.json`：完整图像核验。",
         "- `render.log`：Blender 渲染日志。", "",
     ]

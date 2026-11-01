@@ -294,6 +294,8 @@ def main():
         "schema": 1, "source_filename": Path(JOB["source"]).name,
         "source_sha256": JOB["source_sha256"], "signature": signature,
         "settings": settings, "camera": camera, "material_profile": JOB["material_profile"],
+        "armature": model.armature().name, "meshes": [mesh.name for mesh in meshes],
+        "model_root": model.rootObject().name,
         "material_limitations": "Reference Toon; not HoToon; sphere/toon textures and specular are not replicated.",
         "converted_materials": materials, "source_morph_count": len(morphs),
         "all_morphs": morphs, "expressions": [], "neutral": "images/000_neutral.png",
