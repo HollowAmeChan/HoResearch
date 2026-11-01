@@ -5,8 +5,8 @@
 - 骨架：`Appearance Miku_arm`；定位骨：`頭`。
 - 网格：`Appearance Miku_mesh`。
 - 全部 45 个非辅助形态键均已单独渲染；PNG 为 512 × 512。
-- 仅统一显示尺寸；点击/打开图片文件可查看原始分辨率。
-- “未用于主表”仅指未映射进本次 55 项主表，不表示该功能一定缺少预设。
+- 表内使用实际生成的 192 × 192 缩略图；点击缩略图可打开 512 × 512 原图。
+- 主表以 lil 完整统计的 245 项为准，按使用率降序排列。“未用于主表”指未映射进统计主表，不表示该功能一定缺少预设。
 
 ## 总览
 
@@ -16,49 +16,49 @@
 
 | 序号 | 模型原始形态键名 | 图片 | 主表关联 / 观察 |
 | ---: | --- | --- | --- |
-| 000 | 基准（全部为 0） | <img src="../images/03_Appearance/000_%E5%9F%BA%E5%87%86.png" alt="基准" width="192"> | 无表情对照 |
-| 001 | あ | <img src="../images/03_Appearance/001_%E3%81%82.png" alt="あ" width="192"> | あ（完全同名） |
-| 002 | い | <img src="../images/03_Appearance/002_%E3%81%84.png" alt="い" width="192"> | い（完全同名） |
-| 003 | う | <img src="../images/03_Appearance/003_%E3%81%86.png" alt="う" width="192"> | う（完全同名） |
-| 004 | え | <img src="../images/03_Appearance/004_%E3%81%88.png" alt="え" width="192"> | え（完全同名） |
-| 005 | お | <img src="../images/03_Appearance/005_%E3%81%8A.png" alt="お" width="192"> | お（完全同名） |
-| 006 | ▲ | <img src="../images/03_Appearance/006_%E2%96%B2.png" alt="▲" width="192"> | ▲（完全同名） |
-| 007 | ∧ | <img src="../images/03_Appearance/007_%E2%88%A7.png" alt="∧" width="192"> | ∧（完全同名） |
-| 008 | ω | <img src="../images/03_Appearance/008_%CF%89.png" alt="ω" width="192"> | ω（完全同名） |
-| 009 | ω□ | <img src="../images/03_Appearance/009_%CF%89%E2%96%A1.png" alt="ω□" width="192"> | ω□（完全同名） |
-| 010 | ワ | <img src="../images/03_Appearance/010_%E3%83%AF.png" alt="ワ" width="192"> | ワ（完全同名） |
-| 011 | ゆ | <img src="../images/03_Appearance/011_%E3%82%86.png" alt="ゆ" width="192"> | 未用于主表 |
-| 012 | わらい口 | <img src="../images/03_Appearance/012_%E3%82%8F%E3%82%89%E3%81%84%E5%8F%A3.png" alt="わらい口" width="192"> | 未用于主表 |
-| 013 | 叫び | <img src="../images/03_Appearance/013_%E5%8F%AB%E3%81%B3.png" alt="叫び" width="192"> | 未用于主表 |
-| 014 | えー | <img src="../images/03_Appearance/014_%E3%81%88%E3%83%BC.png" alt="えー" width="192"> | 未用于主表 |
-| 015 | にやり | <img src="../images/03_Appearance/015_%E3%81%AB%E3%82%84%E3%82%8A.png" alt="にやり" width="192"> | にやり（完全同名） |
-| 016 | まばたき | <img src="../images/03_Appearance/016_%E3%81%BE%E3%81%B0%E3%81%9F%E3%81%8D.png" alt="まばたき" width="192"> | まばたき（完全同名） |
-| 017 | 笑い | <img src="../images/03_Appearance/017_%E7%AC%91%E3%81%84.png" alt="笑い" width="192"> | 笑い（完全同名） |
-| 018 | ｷﾞｭｯ | <img src="../images/03_Appearance/018_%EF%BD%B7%EF%BE%9E%EF%BD%AD%EF%BD%AF.png" alt="ｷﾞｭｯ" width="192"> | 未用于主表 |
-| 019 | はぅ | <img src="../images/03_Appearance/019_%E3%81%AF%E3%81%85.png" alt="はぅ" width="192"> | はぅ（完全同名） |
-| 020 | なごみ | <img src="../images/03_Appearance/020_%E3%81%AA%E3%81%94%E3%81%BF.png" alt="なごみ" width="192"> | なごみ（完全同名） |
-| 021 | びっくり | <img src="../images/03_Appearance/021_%E3%81%B3%E3%81%A3%E3%81%8F%E3%82%8A.png" alt="びっくり" width="192"> | びっくり（完全同名） |
-| 022 | じと目 | <img src="../images/03_Appearance/022_%E3%81%98%E3%81%A8%E7%9B%AE.png" alt="じと目" width="192"> | じと目（完全同名） |
-| 023 | ｷﾘｯ | <img src="../images/03_Appearance/023_%EF%BD%B7%EF%BE%98%EF%BD%AF.png" alt="ｷﾘｯ" width="192"> | ｷﾘｯ（完全同名） |
-| 024 | たれ目 | <img src="../images/03_Appearance/024_%E3%81%9F%E3%82%8C%E7%9B%AE.png" alt="たれ目" width="192"> | 未用于主表 |
-| 025 | つり目 | <img src="../images/03_Appearance/025_%E3%81%A4%E3%82%8A%E7%9B%AE.png" alt="つり目" width="192"> | 未用于主表 |
-| 026 | 笑い目 | <img src="../images/03_Appearance/026_%E7%AC%91%E3%81%84%E7%9B%AE.png" alt="笑い目" width="192"> | 未用于主表 |
-| 027 | なぬ！ | <img src="../images/03_Appearance/027_%E3%81%AA%E3%81%AC%EF%BC%81.png" alt="なぬ！" width="192"> | 未用于主表 |
-| 028 | 鼻線消し | <img src="../images/03_Appearance/028_%E9%BC%BB%E7%B7%9A%E6%B6%88%E3%81%97.png" alt="鼻線消し" width="192"> | 未用于主表；头部画面变化很小，待核对 |
-| 029 | 真面目 | <img src="../images/03_Appearance/029_%E7%9C%9F%E9%9D%A2%E7%9B%AE.png" alt="真面目" width="192"> | 真面目（完全同名） |
-| 030 | 困る | <img src="../images/03_Appearance/030_%E5%9B%B0%E3%82%8B.png" alt="困る" width="192"> | 困る（完全同名） |
-| 031 | にこり | <img src="../images/03_Appearance/031_%E3%81%AB%E3%81%93%E3%82%8A.png" alt="にこり" width="192"> | にこり（完全同名） |
-| 032 | 怒り | <img src="../images/03_Appearance/032_%E6%80%92%E3%82%8A.png" alt="怒り" width="192"> | 怒り（完全同名） |
-| 033 | 平行 | <img src="../images/03_Appearance/033_%E5%B9%B3%E8%A1%8C.png" alt="平行" width="192"> | 未用于主表 |
-| 034 | 近 | <img src="../images/03_Appearance/034_%E8%BF%91.png" alt="近" width="192"> | 未用于主表 |
-| 035 | 離 | <img src="../images/03_Appearance/035_%E9%9B%A2.png" alt="離" width="192"> | 未用于主表 |
-| 036 | 短 | <img src="../images/03_Appearance/036_%E7%9F%AD.png" alt="短" width="192"> | 未用于主表 |
-| 037 | 上 | <img src="../images/03_Appearance/037_%E4%B8%8A.png" alt="上" width="192"> | 上（完全同名） |
-| 038 | 下 | <img src="../images/03_Appearance/038_%E4%B8%8B.png" alt="下" width="192"> | 下（完全同名） |
-| 039 | 前 | <img src="../images/03_Appearance/039_%E5%89%8D.png" alt="前" width="192"> | 未用于主表 |
-| 040 | 下睫毛太 | <img src="../images/03_Appearance/040_%E4%B8%8B%E7%9D%AB%E6%AF%9B%E5%A4%AA.png" alt="下睫毛太" width="192"> | 未用于主表 |
-| 041 | 下睫毛消 | <img src="../images/03_Appearance/041_%E4%B8%8B%E7%9D%AB%E6%AF%9B%E6%B6%88.png" alt="下睫毛消" width="192"> | 未用于主表 |
-| 042 | 瞳小 | <img src="../images/03_Appearance/042_%E7%9E%B3%E5%B0%8F.png" alt="瞳小" width="192"> | 瞳小（完全同名） |
-| 043 | 瞳縦 | <img src="../images/03_Appearance/043_%E7%9E%B3%E7%B8%A6.png" alt="瞳縦" width="192"> | 未用于主表 |
-| 044 | HL消1 | <img src="../images/03_Appearance/044_HL%E6%B6%881.png" alt="HL消1" width="192"> | 未用于主表 |
-| 045 | HL消2 | <img src="../images/03_Appearance/045_HL%E6%B6%882.png" alt="HL消2" width="192"> | 未用于主表 |
+| 000 | 基准（全部为 0） | [![基准](../images/thumbnails/192/f285f35c35a37528.png)](../images/03_Appearance/000_%E5%9F%BA%E5%87%86.png) | 无表情对照 |
+| 001 | あ | [![あ](../images/thumbnails/192/a277207b95f0a7cc.png)](../images/03_Appearance/001_%E3%81%82.png) | #1 あ（完全同名；90.89027 %） |
+| 002 | い | [![い](../images/thumbnails/192/4ca49cb577d0dd40.png)](../images/03_Appearance/002_%E3%81%84.png) | #4 い（完全同名；86.74948 %） |
+| 003 | う | [![う](../images/thumbnails/192/859c26a7d0561c40.png)](../images/03_Appearance/003_%E3%81%86.png) | #5 う（完全同名；81.15942 %） |
+| 004 | え | [![え](../images/thumbnails/192/1ec9ea37e1ba9fcc.png)](../images/03_Appearance/004_%E3%81%88.png) | #8 え（完全同名；46.37681 %） |
+| 005 | お | [![お](../images/thumbnails/192/1acc8fd12f4368b7.png)](../images/03_Appearance/005_%E3%81%8A.png) | #3 お（完全同名；87.57764 %） |
+| 006 | ▲ | [![▲](../images/thumbnails/192/9f7431d8687fbc98.png)](../images/03_Appearance/006_%E2%96%B2.png) | #32 ▲（完全同名；2.484472 %） |
+| 007 | ∧ | [![∧](../images/thumbnails/192/63b4baed8586527f.png)](../images/03_Appearance/007_%E2%88%A7.png) | #26 ∧（完全同名；3.933748 %） |
+| 008 | ω | [![ω](../images/thumbnails/192/6fc3dbb4dcd7c66c.png)](../images/03_Appearance/008_%CF%89.png) | #27 ω（完全同名；3.519669 %） |
+| 009 | ω□ | [![ω□](../images/thumbnails/192/ffd0d54b5cb9ef23.png)](../images/03_Appearance/009_%CF%89%E2%96%A1.png) | 未用于主表 |
+| 010 | ワ | [![ワ](../images/thumbnails/192/de7d5aa26d231b3c.png)](../images/03_Appearance/010_%E3%83%AF.png) | #22 ワ（完全同名；7.453416 %） |
+| 011 | ゆ | [![ゆ](../images/thumbnails/192/1429cdd64a8e81fd.png)](../images/03_Appearance/011_%E3%82%86.png) | 未用于主表 |
+| 012 | わらい口 | [![わらい口](../images/thumbnails/192/3e1ca421722c769e.png)](../images/03_Appearance/012_%E3%82%8F%E3%82%89%E3%81%84%E5%8F%A3.png) | 未用于主表 |
+| 013 | 叫び | [![叫び](../images/thumbnails/192/275952d697886626.png)](../images/03_Appearance/013_%E5%8F%AB%E3%81%B3.png) | #57 叫び（完全同名；1.035197 %） |
+| 014 | えー | [![えー](../images/thumbnails/192/d96077e427443d60.png)](../images/03_Appearance/014_%E3%81%88%E3%83%BC.png) | #90 えー（完全同名；0.621118 %） |
+| 015 | にやり | [![にやり](../images/thumbnails/192/81b76f105d9e858f.png)](../images/03_Appearance/015_%E3%81%AB%E3%82%84%E3%82%8A.png) | #14 にやり（完全同名；22.77433 %） |
+| 016 | まばたき | [![まばたき](../images/thumbnails/192/cf98c7b61ed52efa.png)](../images/03_Appearance/016_%E3%81%BE%E3%81%B0%E3%81%9F%E3%81%8D.png) | #2 まばたき（完全同名；87.57764 %） |
+| 017 | 笑い | [![笑い](../images/thumbnails/192/fd8a85c9e684a13c.png)](../images/03_Appearance/017_%E7%AC%91%E3%81%84.png) | #6 笑い（完全同名；68.73706 %） |
+| 018 | ｷﾞｭｯ | [![ｷﾞｭｯ](../images/thumbnails/192/318dbeb35af26c15.png)](../images/03_Appearance/018_%EF%BD%B7%EF%BE%9E%EF%BD%AD%EF%BD%AF.png) | #225 ｷﾞｭｯ（完全同名；0.2070393 %） |
+| 019 | はぅ | [![はぅ](../images/thumbnails/192/e50c638efb36b8c0.png)](../images/03_Appearance/019_%E3%81%AF%E3%81%85.png) | #17 はぅ（完全同名；17.18427 %） |
+| 020 | なごみ | [![なごみ](../images/thumbnails/192/54b064544b292f89.png)](../images/03_Appearance/020_%E3%81%AA%E3%81%94%E3%81%BF.png) | #21 なごみ（完全同名；7.660456 %） |
+| 021 | びっくり | [![びっくり](../images/thumbnails/192/00bdc1f45b6b3cd9.png)](../images/03_Appearance/021_%E3%81%B3%E3%81%A3%E3%81%8F%E3%82%8A.png) | #20 びっくり（完全同名；9.937888 %） |
+| 022 | じと目 | [![じと目](../images/thumbnails/192/88f25f00b9141054.png)](../images/03_Appearance/022_%E3%81%98%E3%81%A8%E7%9B%AE.png) | #19 じと目（完全同名；10.35197 %） |
+| 023 | ｷﾘｯ | [![ｷﾘｯ](../images/thumbnails/192/b36544f9f30386f1.png)](../images/03_Appearance/023_%EF%BD%B7%EF%BE%98%EF%BD%AF.png) | #31 ｷﾘｯ（完全同名；2.484472 %） |
+| 024 | たれ目 | [![たれ目](../images/thumbnails/192/1e796dd0444b6172.png)](../images/03_Appearance/024_%E3%81%9F%E3%82%8C%E7%9B%AE.png) | 未用于主表 |
+| 025 | つり目 | [![つり目](../images/thumbnails/192/dedc42fa5b9eec37.png)](../images/03_Appearance/025_%E3%81%A4%E3%82%8A%E7%9B%AE.png) | 未用于主表 |
+| 026 | 笑い目 | [![笑い目](../images/thumbnails/192/b1b08236dfc5337d.png)](../images/03_Appearance/026_%E7%AC%91%E3%81%84%E7%9B%AE.png) | #227 笑い目（完全同名；0.2070393 %） |
+| 027 | なぬ！ | [![なぬ！](../images/thumbnails/192/c7814741b9608c9e.png)](../images/03_Appearance/027_%E3%81%AA%E3%81%AC%EF%BC%81.png) | #224 なぬ！（完全同名；0.2070393 %） |
+| 028 | 鼻線消し | [![鼻線消し](../images/thumbnails/192/5577d46a03585585.png)](../images/03_Appearance/028_%E9%BC%BB%E7%B7%9A%E6%B6%88%E3%81%97.png) | 未用于主表；头部画面变化很小，待核对 |
+| 029 | 真面目 | [![真面目](../images/thumbnails/192/b2d91f8b3a3b3d3c.png)](../images/03_Appearance/029_%E7%9C%9F%E9%9D%A2%E7%9B%AE.png) | #13 真面目（完全同名；23.18841 %） |
+| 030 | 困る | [![困る](../images/thumbnails/192/27b32d894daf799b.png)](../images/03_Appearance/030_%E5%9B%B0%E3%82%8B.png) | #7 困る（完全同名；49.06832 %） |
+| 031 | にこり | [![にこり](../images/thumbnails/192/c9c250c4e8adb748.png)](../images/03_Appearance/031_%E3%81%AB%E3%81%93%E3%82%8A.png) | #16 にこり（完全同名；17.59834 %） |
+| 032 | 怒り | [![怒り](../images/thumbnails/192/1299ff38af801295.png)](../images/03_Appearance/032_%E6%80%92%E3%82%8A.png) | #10 怒り（完全同名；28.36439 %） |
+| 033 | 平行 | [![平行](../images/thumbnails/192/4c7ded4fedadc425.png)](../images/03_Appearance/033_%E5%B9%B3%E8%A1%8C.png) | #64 平行（完全同名；0.8281574 %） |
+| 034 | 近 | [![近](../images/thumbnails/192/3162fc08c8b6be30.png)](../images/03_Appearance/034_%E8%BF%91.png) | 未用于主表 |
+| 035 | 離 | [![離](../images/thumbnails/192/a3337a29ecf74877.png)](../images/03_Appearance/035_%E9%9B%A2.png) | 未用于主表 |
+| 036 | 短 | [![短](../images/thumbnails/192/6dc8a2806c7a0b39.png)](../images/03_Appearance/036_%E7%9F%AD.png) | 未用于主表 |
+| 037 | 上 | [![上](../images/thumbnails/192/17369ab9f761069e.png)](../images/03_Appearance/037_%E4%B8%8A.png) | #12 上（完全同名；25.67288 %） |
+| 038 | 下 | [![下](../images/thumbnails/192/69179ab977e41dbc.png)](../images/03_Appearance/038_%E4%B8%8B.png) | #9 下（完全同名；40.37267 %） |
+| 039 | 前 | [![前](../images/thumbnails/192/2ae22832ca201519.png)](../images/03_Appearance/039_%E5%89%8D.png) | #69 前（完全同名；0.621118 %） |
+| 040 | 下睫毛太 | [![下睫毛太](../images/thumbnails/192/5b8cb26053186263.png)](../images/03_Appearance/040_%E4%B8%8B%E7%9D%AB%E6%AF%9B%E5%A4%AA.png) | 未用于主表 |
+| 041 | 下睫毛消 | [![下睫毛消](../images/thumbnails/192/149e48c19014a302.png)](../images/03_Appearance/041_%E4%B8%8B%E7%9D%AB%E6%AF%9B%E6%B6%88.png) | 未用于主表 |
+| 042 | 瞳小 | [![瞳小](../images/thumbnails/192/95e2bd23a0bcd337.png)](../images/03_Appearance/042_%E7%9E%B3%E5%B0%8F.png) | #15 瞳小（完全同名；19.87578 %） |
+| 043 | 瞳縦 | [![瞳縦](../images/thumbnails/192/73196d71062328fc.png)](../images/03_Appearance/043_%E7%9E%B3%E7%B8%A6.png) | 未用于主表 |
+| 044 | HL消1 | [![HL消1](../images/thumbnails/192/7034c18d793df4bd.png)](../images/03_Appearance/044_HL%E6%B6%881.png) | 未用于主表 |
+| 045 | HL消2 | [![HL消2](../images/thumbnails/192/39f3399fc1bb4e93.png)](../images/03_Appearance/045_HL%E6%B6%882.png) | 未用于主表 |

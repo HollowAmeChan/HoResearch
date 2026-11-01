@@ -3,13 +3,13 @@ from __future__ import annotations
 
 import csv
 import hashlib
-import html
 import json
 import os
 import re
 import sys
 import unicodedata
 from collections import Counter
+from decimal import Decimal
 from pathlib import Path
 from urllib.parse import quote
 
@@ -50,12 +50,44 @@ def cell(value):
     return str(value).replace("|", "&#124;").replace("\n", " ")
 
 
+def write_markdown(path, lines):
+    """Reject malformed pipe tables before replacing a generated document."""
+    text = "\n".join(lines)
+    table = []
+    for number, line in enumerate(text.splitlines() + [""], 1):
+        if line.startswith("|") and line.endswith("|"):
+            table.append((number, line.strip("|").split("|")))
+            continue
+        if not table:
+            continue
+        expected = len(table[0][1])
+        if len(table) < 2 or not all(re.fullmatch(r"\s*:?-{3,}:?\s*", c) for c in table[1][1]):
+            raise ValueError(f"{path.name}:{table[0][0]} 表格缺少合法分隔行")
+        for row_number, columns in table:
+            if len(columns) != expected:
+                raise ValueError(f"{path.name}:{row_number} 表格应为 {expected} 列，实际 {len(columns)} 列")
+        table = []
+    path.write_text(text, encoding="utf-8")
+
+
 def normalized(value):
     return unicodedata.normalize("NFKC", value).strip()
 
 
 def image_tag(path, label, width=144, prefix=""):
-    return f'<img src="{quote(prefix + path, safe="/")}" alt="{html.escape(label, quote=True)}" width="{width}">'
+    """Use real thumbnails and standard Markdown, including inside table cells."""
+    digest = hashlib.sha256(path.encode("utf-8")).hexdigest()[:16]
+    thumbnail = f"images/thumbnails/{width}/{digest}.png"
+    target = OUT / thumbnail
+    target.parent.mkdir(parents=True, exist_ok=True)
+    with Image.open(OUT / path) as source:
+        image = source.convert("RGBA")
+        image.thumbnail((width, width), Image.Resampling.LANCZOS)
+        image.save(target)
+    alt = cell(label).replace("\\", "\\\\").replace("[", "\\[").replace("]", "\\]")
+    full_url = quote(prefix + path, safe="/")
+    thumbnail_url = prefix + thumbnail
+    return f"[![{alt}]({thumbnail_url})]({full_url})"
 
 
 def read_data():
@@ -80,6 +112,8 @@ def statistics(presets):
             rates[match[1]] = match[2]
         elif line.strip():
             raise ValueError(f"Unparsed statistic: {line!r}")
+    # Keep each original spelling as a separate row; ties retain source order.
+    rates = dict(sorted(rates.items(), key=lambda item: -Decimal(item[1])))
     preset_names = {p["name"] for p in presets}
     lines = [
         "# 附录：lilxyzw 的 MMD 表情使用统计", "",
@@ -90,7 +124,7 @@ def statistics(presets):
         "- 样本为作者手头的 **483 个动作文件**。统计对象是动作中的 morph 使用率，不是模型拥有率。",
         "- 按作者说明，关键帧数量不超过 2，或全部关键帧权重不超过 0.01 的项目，被视为未使用并排除。",
         "- 精选清单来自较高使用率的项目，名称向 MMD 附带模型统一后进一步筛选。",
-        "- 原始名称、百分比和顺序均保留；不合并全半角、大小写或名称变体。",
+        "- 原始名称和百分比均保留；完整统计按数值从高到低排列，同频时保持源文件顺序，不合并全半角、大小写或名称变体。",
         "- “HoTools 预设”仅表示名称完全相同；不据此判定形态或左右语义完全一致。",
         "", "## 作者原文说明", "", "> " + snap["description"].replace("\n", "\n> "),
         "", "## 精选清单", "",
@@ -114,7 +148,7 @@ def statistics(presets):
         "- [Gist 元数据与正文快照](lilxyzw_gist_snapshot.json)",
         "- [本次 HoTools 目录快照](HoTools_shapekey_catalog.csv)", "",
     ]
-    (root / "lil_MMD表情统计.md").write_text("\n".join(lines), encoding="utf-8")
+    write_markdown(root / "lil_MMD表情统计.md", lines)
     return rates, curated
 
 
@@ -234,20 +268,36 @@ def build():
     neutral_overview(models)
     report_dir = OUT / "模型明细"
     report_dir.mkdir(exist_ok=True)
-    mapping = []
-    used = {m["collection"]: set() for m in models}
+    preset_mapping = []
     for i, preset in enumerate(presets, 1):
         for model in models:
             status, item = match_preset(preset["name"], model)
-            if item:
-                used[model["collection"]].add(item["name"])
-            mapping.append({
+            preset_mapping.append({
                 "preset_index": i, "preset": preset["name"],
                 "region": preset["region"], "model": model["collection"],
                 "match_type": status, "actual_shape_key": item["name"] if item else "",
                 "image": item["path"] if item else "",
             })
     with (OUT / "预设与模型对应.csv").open("w", encoding="utf-8-sig", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=list(preset_mapping[0]))
+        writer.writeheader()
+        writer.writerows(preset_mapping)
+    preset_names = {preset["name"] for preset in presets}
+    mapping = []
+    used = {m["collection"]: set() for m in models}
+    for rank, (name, rate) in enumerate(rates.items(), 1):
+        for model in models:
+            status, item = match_preset(name, model)
+            if item:
+                used[model["collection"]].add(item["name"])
+            mapping.append({
+                "rank": rank, "statistic_name": name, "usage_percent": rate,
+                "hotools_preset": "是" if name in preset_names else "否",
+                "model": model["collection"], "match_type": status,
+                "actual_shape_key": item["name"] if item else "",
+                "image": item["path"] if item else "",
+            })
+    with (OUT / "lil统计与模型对应.csv").open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=list(mapping[0]))
         writer.writeheader()
         writer.writerows(mapping)
@@ -255,7 +305,8 @@ def build():
         "# MMD 表情参考", "",
         "- 制作日期：2026-11-01（Asia/Shanghai）。",
         "- 源工程：`C:\\Users\\hhh12\\Desktop\\mmd表情研究.blend`；原始工程未覆盖保存。",
-        "- 预设来源：HoTools `ShapekeyTools/shapekey_catalog.csv` 中 MMD 的 **55 条 TEMPLATE**，顺序和名称保持原样。",
+        f"- 主表以 lilxyzw 完整统计中的 **{len(rates)} 个原始表情名称**为准，按动作使用率从高到低排列；同频保持源文件顺序。",
+        "- HoTools 的 **55 条 MMD TEMPLATE** 仅作为预设对照列，未收录的统计名称也全部保留。",
         f"- 本次输出：**{sum(len(m['expressions']) for m in models)} 张单项形态键图 + {len(models)} 张基准图 + {context_count} 张组合辅助图**，全部为 **512 × 512 PNG**。",
         "- 四个模型均以各自骨架的 **“頭”骨**定位，结合眼骨朝向与脸部材质包围盒确定正面正交机位。",
         "- 每次只激活一个实际形态键（值 1.0），其余归零。同一模型的机位、灯光和取景固定；128 渲染采样，透明背景。",
@@ -263,17 +314,19 @@ def build():
         "- 材质按工程磁盘保存状态原样使用。检查到的主要连接为 `MMDShaderDev` 等节点组，未检测到名含 `HoToon` 的节点；没有为此替换或重建材质。",
         "- `Basis` 和 `mmd_sdef_c / mmd_sdef_r0 / mmd_sdef_r1` 是基准/辅助数据，不当作表情渲染。",
         "- 模型原有的换装、附件、局部调节键同样保留独立渲染，放入模型明细；头部取景下可能没有明显差异。",
-        "- 此版本用于视觉对照，暂不据此宣称预设完整，也不修改插件中的预设。",
+        "- 此版本用于完整统计与实际模型的视觉对照，暂不据此宣称预设完整，也不修改插件中的预设。",
         "", "## 阅读方式", "",
+        "- 表内使用标准 Markdown 缩略图链接；点击缩略图可打开 512 × 512 原图。缩略图单独保存在 `images/thumbnails/`。",
         "- **完全同名**：主表默认直接展示图片。",
         "- **全半角兼容**：仅统一 Unicode 全半角；图片旁注明原始键名。",
         "- **候选变体**：仅明确列出 `x` 前缀或 `E` 后缀的作者变体，供视觉研究；不计入完全同名覆盖，不据名称断言等价。",
         "- **未找到**：该模型没有对应键，也没有采用上述候选命名。不会生成一张基准图冒充该表情。",
-        "- 主表的“其他”沿用插件分类，包含眉形、瞳孔及特殊效果；不擅自重分类。",
-        "- lil 使用率按原统计中的完全同名项填写；这是 **483 个动作中的使用率**，不是模型覆盖率。",
-        "", "## 模型与预设覆盖", "",
+        "- **HoTools 预设**：仅当该统计原名与现有 TEMPLATE 完全同名时标记“是”；不据此合并统计中的名称变体。",
+        "- lil 的原始名称、全半角、大小写及频率精度全部保留；即使四个模型都未找到图片，该行也会保留。",
+        "- lil 使用率是 **483 个动作中的使用率**，不是模型拥有率；下方汇总为统计名称的匹配情况，不直接等同功能覆盖率。",
+        "", "## 模型与统计名称对应", "",
         "| 模型集合 | 骨架 | 实际形态键图 | 完全同名 | 全半角兼容 | 候选变体 | 未找到 | 全部原名与图片 |",
-        "| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |",
+        "| --- | --- | ---: | ---: | ---: | ---: | ---: | --- |",
     ]
     for model in models:
         counts = Counter(r["match_type"] for r in mapping if r["model"] == model["collection"])
@@ -284,33 +337,31 @@ def build():
         "| " + " | ".join(m["collection"] for m in models) + " |",
         "| " + " | ".join("---" for _ in models) + " |",
         "| " + " | ".join(image_tag(m["neutral"], m["collection"] + " 基准", 220) for m in models) + " |",
-        "", "## 现有预设参考表", "",
-        "| # | 预设原名 | 插件区域 | lil 使用率 | " + " | ".join(m["collection"] for m in models) + " |",
-        "| ---: | --- | --- | ---: | " + " | ".join("---" for _ in models) + " |",
+        "", f"## lil 全部表情参考表（{len(rates)} 项，使用率降序）", "",
+        "| 排名 | lil 统计原名 | 动作使用率 | HoTools 预设 | " + " | ".join(m["collection"] for m in models) + " |",
+        "| ---: | --- | ---: | --- | " + " | ".join("---" for _ in models) + " |",
     ]
-    region_labels = {"EYE": "眼部", "MOUTH": "口部", "OTHER": "其他"}
-    for i, preset in enumerate(presets, 1):
-        name = preset["name"]
-        cells = [str(i), cell(name), region_labels[preset["region"]], rates.get(name, "—") + (" %" if name in rates else "")]
+    for rank, (name, rate) in enumerate(rates.items(), 1):
+        cells = [str(rank), cell(name), rate + " %", "是" if name in preset_names else "否"]
         for model in models:
             status, item = match_preset(name, model)
             if not item:
                 cells.append("未找到")
                 continue
-            label = "" if status == "完全同名" else f"<br>{status}：{cell(item['name'])}"
-            low = "<br>头部画面变化很小，待核对" if (model["collection"], item["name"]) in low_lookup else ""
+            label = "" if status == "完全同名" else f" {status}：{cell(item['name'])}"
+            low = "；头部画面变化很小，待核对" if (model["collection"], item["name"]) in low_lookup else ""
             combined = ""
             for example in model.get("context_examples", []):
                 if example["name"] == item["name"]:
                     context_name = next(iter(example["context_weights"]))
-                    combined += f"<br>组合辅助：{cell(context_name)}=1 + {cell(item['name'])}=1<br>" + image_tag(example["path"], item["name"] + " 组合辅助")
+                    combined += f"；[组合辅助：{cell(context_name)}=1 + {cell(item['name'])}=1]({quote(example['path'], safe='/')})"
                     if context_differences[example["path"]] < 32:
-                        combined += "<br>组合中仍无明显可见变化，待核对"
+                        combined += "；组合中仍无明显可见变化，待核对"
             cells.append(image_tag(item["path"], model["collection"] + " " + item["name"]) + label + low + combined)
         lines.append("| " + " | ".join(cells) + " |")
     lines += [
         "", "## 模型独有项与全部渲染", "",
-        "以下页面列出各模型**全部实际形态键**，包括预设外项目，方便下一轮验证预设是否足够。", "",
+        "以下页面列出各模型**全部实际形态键**，包括未出现在 lil 统计主表中的项目，方便下一轮交叉验证。", "",
     ]
     for model in models:
         overview = contact_sheet(model)
@@ -320,8 +371,8 @@ def build():
             f"- 骨架：`{model['armature']}`；定位骨：`頭`。",
             f"- 网格：`{model['mesh']}`。",
             f"- 全部 {len(model['expressions'])} 个非辅助形态键均已单独渲染；PNG 为 512 × 512。",
-            "- 仅统一显示尺寸；点击/打开图片文件可查看原始分辨率。",
-            "- “未用于主表”仅指未映射进本次 55 项主表，不表示该功能一定缺少预设。",
+            "- 表内使用实际生成的 192 × 192 缩略图；点击缩略图可打开 512 × 512 原图。",
+            f"- 主表以 lil 完整统计的 {len(rates)} 项为准，按使用率降序排列。“未用于主表”指未映射进统计主表，不表示该功能一定缺少预设。",
             "", "## 总览", "",
             f"![全部形态键总览](../{quote(overview, safe='/')})",
             "", "## 逐项图片", "",
@@ -331,7 +382,7 @@ def build():
         ]
         for item in model["expressions"]:
             links = [r for r in mapping if r["model"] == model["collection"] and r["actual_shape_key"] == item["name"]]
-            annotation = "；".join(f"{r['preset']}（{r['match_type']}）" for r in links) or "未用于主表"
+            annotation = "；".join(f"#{r['rank']} {r['statistic_name']}（{r['match_type']}；{r['usage_percent']} %）" for r in links) or "未用于主表"
             if (model["collection"], item["name"]) in low_lookup:
                 annotation += "；头部画面变化很小，待核对"
             details.append(f"| {item['index']:03d} | {cell(item['name'])} | {image_tag(item['path'], item['name'], 192, '../')} | {cell(annotation)} |")
@@ -352,7 +403,7 @@ def build():
                     f"{cell(context_name)}=1；{cell(example['name'])}=1{note}",
                 )) + " |")
         details.append("")
-        (report_dir / (model["folder"] + ".md")).write_text("\n".join(details), encoding="utf-8")
+        write_markdown(report_dir / (model["folder"] + ".md"), details)
         extra_count = len(model["expressions"]) - len(used[model["collection"]])
         detail_path = quote("模型明细/" + model["folder"] + ".md", safe="/")
         lines.append(f"- [{model['collection']}：{len(model['expressions'])} 项全部图片]({detail_path})；其中 {extra_count} 项未用于主表。")
@@ -372,11 +423,12 @@ def build():
         "- `scripts/build_reference.py`：生成表格、明细与图像核验。",
         "- `scene_inventory.json`：集合、骨架、形态键、材质、贴图清单。",
         "- `0*_renders.json`：每个模型的镜头、实际键名和图片路径。",
+        f"- `lil统计与模型对应.csv`：按使用率降序排列的 {len(rates)} × {len(models)} 项统计名称与图片映射。",
         "- `预设与模型对应.csv`：按预设原始顺序排列的 55 × 4 项名称映射。",
         "- `render_validation.json`：完整图像核验。",
         "- `render.log`：Blender 渲染日志。", "",
     ]
-    (OUT / "MMD表情参考.md").write_text("\n".join(lines), encoding="utf-8")
+    write_markdown(OUT / "MMD表情参考.md", lines)
     print(json.dumps({
         "models": len(models), "presets": len(presets),
         "expression_images": sum(len(m["expressions"]) for m in models),

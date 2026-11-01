@@ -20,6 +20,7 @@ venv/
 htmlcov/
 
 # 工具依赖、缓存与本地临时资料
+/IGNORE/
 node_modules/
 .cache/
 .tmp/
@@ -47,6 +48,8 @@ _scratch/
 *.blend[0-9][0-9]
 blendcache_*/
 *.bphys
+*.pmx
+*.pmd
 
 # 临时 Unity 工程的自动生成目录
 [Ll]ibrary/

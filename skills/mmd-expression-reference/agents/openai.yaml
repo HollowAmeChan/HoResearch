@@ -1,0 +1,4 @@
+interface:
+  display_name: "MMD 表情参考渲染"
+  short_description: "在本机导入 PMX 模型、替换 Toon 材质并自动渲染全部 MMD 表情参考图"
+  default_prompt: "使用 $mmd-expression-reference 导入这个 PMX，在本机替换材质并输出全部 512×512 表情参考图。"
